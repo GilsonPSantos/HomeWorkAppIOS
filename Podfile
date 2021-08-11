@@ -24,12 +24,12 @@ def core_feature
   pod 'GPSCoreFeature', :path => $core_path + 'CoreFeature/GPSCoreFeature'
 end
 
-def core_feature_testspec
-  pod 'GPSCoreFeature', :path => $core_path + 'CoreFeature/GPSCoreFeature', :testspecs => ['Tests']
-end
-
 def service
   pod 'GPSExtensions', :path => $service_path + 'GPSExtensions'
+end
+
+def core_feature_testspec
+  pod 'GPSCoreFeature', :path => $core_path + 'CoreFeature/GPSCoreFeature', :testspecs => ['Tests']
 end
   
 target 'HomeWorkApp' do

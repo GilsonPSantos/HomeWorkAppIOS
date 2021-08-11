@@ -1,8 +1,16 @@
 PODS:
+  - GPSCoordinator (1.0.0):
+    - GPSCoordinatorInterface
+  - GPSCoordinator/Tests (1.0.0):
+    - GPSCoordinatorInterface
+  - GPSCoordinatorInterface (1.0.0)
   - SwiftGen (6.4.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
+  - GPSCoordinator (from `Modules/Core/Coordinator/GPSCoordinator`)
+  - GPSCoordinator/Tests (from `Modules/Core/Coordinator/GPSCoordinator`)
+  - GPSCoordinatorInterface (from `Modules/Core/Coordinator/GPSCoordinatorInterface`)
   - SwiftGen (~> 6.0)
   - SwiftLint
 
@@ -11,10 +19,18 @@ SPEC REPOS:
     - SwiftGen
     - SwiftLint
 
+EXTERNAL SOURCES:
+  GPSCoordinator:
+    :path: Modules/Core/Coordinator/GPSCoordinator
+  GPSCoordinatorInterface:
+    :path: Modules/Core/Coordinator/GPSCoordinatorInterface
+
 SPEC CHECKSUMS:
+  GPSCoordinator: cac11030203f4e6365714735aa44462f6149aa29
+  GPSCoordinatorInterface: d509e6362ff63845f4c295c81ad7769a99f8e0a7
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 725ab6e007a3a17ffa3c5866b99bea4ae2ece9e9
+PODFILE CHECKSUM: 81f3c32b971e137ef3ef638ec5408aed941da286
 
 COCOAPODS: 1.10.0

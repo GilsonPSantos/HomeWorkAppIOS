@@ -16,3 +16,6 @@ service: ## Run createService script
 
 feature: ## Run createFeature script
 	bash $(SCRIPTS_DIR)/createFeature.sh
+
+core: ## Run createFeature script
+	bash $(SCRIPTS_DIR)/createCore.sh

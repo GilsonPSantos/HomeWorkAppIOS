@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,8 @@
 		448A77942689F27200B63773 /* HomeWorkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A77932689F27200B63773 /* HomeWorkAppTests.swift */; };
 		448A779F2689F27200B63773 /* HomeWorkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A779E2689F27200B63773 /* HomeWorkAppUITests.swift */; };
 		448A77F3268A2F6700B63773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448A77F2268A2F6700B63773 /* Localizable.strings */; };
-		696C3FF13483898EE06212FA /* Pods_HomeWorkApp_HomeWorkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B6EF20507D284A7BCCBABF /* Pods_HomeWorkApp_HomeWorkAppUITests.framework */; };
-		6A005A572ECAB958FC4C0CCC /* Pods_HomeWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0967A913A603F28C37B455 /* Pods_HomeWorkApp.framework */; };
-		D1A1E39D70191ED578769EC7 /* Pods_HomeWorkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A430CB93E7F246A70A9042 /* Pods_HomeWorkAppTests.framework */; };
+		4DCC0D9C2A775B9077297235 /* Pods_HomeWorkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A3EB3439E7DD54792AA7F2 /* Pods_HomeWorkAppTests.framework */; };
+		B75A6FE40C34A466299682DB /* Pods_HomeWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2951F3AC9A767867513D5301 /* Pods_HomeWorkApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04100EAC203B750524AEFD31 /* Pods-HomeWorkApp-HomeWorkAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp-HomeWorkAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp-HomeWorkAppUITests/Pods-HomeWorkApp-HomeWorkAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0E0967A913A603F28C37B455 /* Pods_HomeWorkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0924D3E833F3679DE138F50E /* Pods-HomeWorkAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		2951F3AC9A767867513D5301 /* Pods_HomeWorkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368F47CDB416EFA81670A979 /* Pods-HomeWorkApp.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.mock.xcconfig"; sourceTree = "<group>"; };
+		36A3EB3439E7DD54792AA7F2 /* Pods_HomeWorkAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A77792689F26F00B63773 /* HomeWorkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A777C2689F26F00B63773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448A77802689F26F00B63773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,16 +53,10 @@
 		448A779E2689F27200B63773 /* HomeWorkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkAppUITests.swift; sourceTree = "<group>"; };
 		448A77A02689F27200B63773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448A77F2268A2F6700B63773 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		68A430CB93E7F246A70A9042 /* Pods_HomeWorkAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7336817230052A15521D447D /* Pods-HomeWorkApp-HomeWorkAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp-HomeWorkAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp-HomeWorkAppUITests/Pods-HomeWorkApp-HomeWorkAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		744073767B59FD4F479860A3 /* Pods-HomeWorkAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C7C0B0F12148E68886C63BA /* Pods-HomeWorkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.release.xcconfig"; sourceTree = "<group>"; };
-		8F5F307CCDDD7B8355CB35C0 /* Pods-HomeWorkAppTests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.mock.xcconfig"; sourceTree = "<group>"; };
-		A6AC3D8F961F57CB29978EE6 /* Pods-HomeWorkApp.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.mock.xcconfig"; sourceTree = "<group>"; };
-		B2E79E62B186A27C5758F621 /* Pods-HomeWorkApp-HomeWorkAppUITests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp-HomeWorkAppUITests.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp-HomeWorkAppUITests/Pods-HomeWorkApp-HomeWorkAppUITests.mock.xcconfig"; sourceTree = "<group>"; };
-		D82CE537EC93379DB96E43AC /* Pods-HomeWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
-		E5B6EF20507D284A7BCCBABF /* Pods_HomeWorkApp_HomeWorkAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkApp_HomeWorkAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F104A8E4CE2DE10B38E2DEED /* Pods-HomeWorkAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		56247EC79EE6A88F4854B176 /* Pods-HomeWorkAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		590F627C56881A718A823ECE /* Pods-HomeWorkAppTests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.mock.xcconfig"; sourceTree = "<group>"; };
+		656EB2E9CD8E056CD44070A5 /* Pods-HomeWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E7EA8665627A587E16419D38 /* Pods-HomeWorkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A005A572ECAB958FC4C0CCC /* Pods_HomeWorkApp.framework in Frameworks */,
+				B75A6FE40C34A466299682DB /* Pods_HomeWorkApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A1E39D70191ED578769EC7 /* Pods_HomeWorkAppTests.framework in Frameworks */,
+				4DCC0D9C2A775B9077297235 /* Pods_HomeWorkAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696C3FF13483898EE06212FA /* Pods_HomeWorkApp_HomeWorkAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +94,7 @@
 				448A779D2689F27200B63773 /* HomeWorkAppUITests */,
 				448A777A2689F26F00B63773 /* Products */,
 				A730D121C0CBB54DEBDA1D28 /* Pods */,
-				771813EADF4294192433A08E /* Frameworks */,
+				71C426219410A9B9CFED03B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,12 +179,11 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
-		771813EADF4294192433A08E /* Frameworks */ = {
+		71C426219410A9B9CFED03B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E0967A913A603F28C37B455 /* Pods_HomeWorkApp.framework */,
-				E5B6EF20507D284A7BCCBABF /* Pods_HomeWorkApp_HomeWorkAppUITests.framework */,
-				68A430CB93E7F246A70A9042 /* Pods_HomeWorkAppTests.framework */,
+				2951F3AC9A767867513D5301 /* Pods_HomeWorkApp.framework */,
+				36A3EB3439E7DD54792AA7F2 /* Pods_HomeWorkAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,15 +191,12 @@
 		A730D121C0CBB54DEBDA1D28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D82CE537EC93379DB96E43AC /* Pods-HomeWorkApp.debug.xcconfig */,
-				A6AC3D8F961F57CB29978EE6 /* Pods-HomeWorkApp.mock.xcconfig */,
-				7C7C0B0F12148E68886C63BA /* Pods-HomeWorkApp.release.xcconfig */,
-				04100EAC203B750524AEFD31 /* Pods-HomeWorkApp-HomeWorkAppUITests.debug.xcconfig */,
-				B2E79E62B186A27C5758F621 /* Pods-HomeWorkApp-HomeWorkAppUITests.mock.xcconfig */,
-				7336817230052A15521D447D /* Pods-HomeWorkApp-HomeWorkAppUITests.release.xcconfig */,
-				744073767B59FD4F479860A3 /* Pods-HomeWorkAppTests.debug.xcconfig */,
-				8F5F307CCDDD7B8355CB35C0 /* Pods-HomeWorkAppTests.mock.xcconfig */,
-				F104A8E4CE2DE10B38E2DEED /* Pods-HomeWorkAppTests.release.xcconfig */,
+				656EB2E9CD8E056CD44070A5 /* Pods-HomeWorkApp.debug.xcconfig */,
+				368F47CDB416EFA81670A979 /* Pods-HomeWorkApp.mock.xcconfig */,
+				E7EA8665627A587E16419D38 /* Pods-HomeWorkApp.release.xcconfig */,
+				56247EC79EE6A88F4854B176 /* Pods-HomeWorkAppTests.debug.xcconfig */,
+				590F627C56881A718A823ECE /* Pods-HomeWorkAppTests.mock.xcconfig */,
+				0924D3E833F3679DE138F50E /* Pods-HomeWorkAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -218,11 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448A77A32689F27200B63773 /* Build configuration list for PBXNativeTarget "HomeWorkApp" */;
 			buildPhases = (
-				98A10DE7BF0B386CF1079149 /* [CP] Check Pods Manifest.lock */,
+				BE9AACD50EF621B38D8A25F5 /* [CP] Check Pods Manifest.lock */,
 				448A77752689F26F00B63773 /* Sources */,
 				448A77762689F26F00B63773 /* Frameworks */,
 				448A77772689F26F00B63773 /* Resources */,
 				448A77ED268A2DA000B63773 /* SwiftLint e SwiftGen */,
+				8C292F9825FDA817889A98B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,10 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448A77A62689F27200B63773 /* Build configuration list for PBXNativeTarget "HomeWorkAppTests" */;
 			buildPhases = (
-				18EB8761A741C8872D9E4983 /* [CP] Check Pods Manifest.lock */,
+				54274B1D25F298ACBFE7959A /* [CP] Check Pods Manifest.lock */,
 				448A778B2689F27200B63773 /* Sources */,
 				448A778C2689F27200B63773 /* Frameworks */,
 				448A778D2689F27200B63773 /* Resources */,
+				AC4D28EAC9B3DB1AE75300EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,7 +248,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448A77A92689F27200B63773 /* Build configuration list for PBXNativeTarget "HomeWorkAppUITests" */;
 			buildPhases = (
-				AC0A52026214EBFA68584A3C /* [CP] Check Pods Manifest.lock */,
 				448A77962689F27200B63773 /* Sources */,
 				448A77972689F27200B63773 /* Frameworks */,
 				448A77982689F27200B63773 /* Resources */,
@@ -341,7 +332,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18EB8761A741C8872D9E4983 /* [CP] Check Pods Manifest.lock */ = {
+		448A77ED268A2DA000B63773 /* SwiftLint e SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint e SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftGen/bin/swiftgen\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		54274B1D25F298ACBFE7959A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,25 +372,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		448A77ED268A2DA000B63773 /* SwiftLint e SwiftGen */ = {
+		8C292F9825FDA817889A98B6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
-			name = "SwiftLint e SwiftGen";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftGen/bin/swiftgen\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		98A10DE7BF0B386CF1079149 /* [CP] Check Pods Manifest.lock */ = {
+		AC4D28EAC9B3DB1AE75300EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9AACD50EF621B38D8A25F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,28 +422,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HomeWorkApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC0A52026214EBFA68584A3C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HomeWorkApp-HomeWorkAppUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -598,8 +601,9 @@
 		};
 		448A77A42689F27200B63773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D82CE537EC93379DB96E43AC /* Pods-HomeWorkApp.debug.xcconfig */;
+			baseConfigurationReference = 656EB2E9CD8E056CD44070A5 /* Pods-HomeWorkApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,8 +621,9 @@
 		};
 		448A77A52689F27200B63773 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C7C0B0F12148E68886C63BA /* Pods-HomeWorkApp.release.xcconfig */;
+			baseConfigurationReference = E7EA8665627A587E16419D38 /* Pods-HomeWorkApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -636,9 +641,9 @@
 		};
 		448A77A72689F27200B63773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 744073767B59FD4F479860A3 /* Pods-HomeWorkAppTests.debug.xcconfig */;
+			baseConfigurationReference = 56247EC79EE6A88F4854B176 /* Pods-HomeWorkAppTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomeWorkAppTests/Info.plist;
@@ -658,9 +663,9 @@
 		};
 		448A77A82689F27200B63773 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F104A8E4CE2DE10B38E2DEED /* Pods-HomeWorkAppTests.release.xcconfig */;
+			baseConfigurationReference = 0924D3E833F3679DE138F50E /* Pods-HomeWorkAppTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomeWorkAppTests/Info.plist;
@@ -680,9 +685,8 @@
 		};
 		448A77AA2689F27200B63773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04100EAC203B750524AEFD31 /* Pods-HomeWorkApp-HomeWorkAppUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomeWorkAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -700,9 +704,8 @@
 		};
 		448A77AB2689F27200B63773 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7336817230052A15521D447D /* Pods-HomeWorkApp-HomeWorkAppUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomeWorkAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -781,8 +784,9 @@
 		};
 		448A77EA268A2B5400B63773 /* Mock */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6AC3D8F961F57CB29978EE6 /* Pods-HomeWorkApp.mock.xcconfig */;
+			baseConfigurationReference = 368F47CDB416EFA81670A979 /* Pods-HomeWorkApp.mock.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -800,9 +804,9 @@
 		};
 		448A77EB268A2B5400B63773 /* Mock */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F5F307CCDDD7B8355CB35C0 /* Pods-HomeWorkAppTests.mock.xcconfig */;
+			baseConfigurationReference = 590F627C56881A718A823ECE /* Pods-HomeWorkAppTests.mock.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomeWorkAppTests/Info.plist;
@@ -822,9 +826,8 @@
 		};
 		448A77EC268A2B5400B63773 /* Mock */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2E79E62B186A27C5758F621 /* Pods-HomeWorkApp-HomeWorkAppUITests.mock.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomeWorkAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

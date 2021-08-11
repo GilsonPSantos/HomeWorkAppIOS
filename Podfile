@@ -7,21 +7,40 @@ platform :ios, '14.5'
 #     "ApiKey"
 #   ]}
 
+$modules_path = 'Modules/'
+$core_path = $modules_path + 'Core/'
+
 def external_pods 
   pod  'SwiftLint'
   pod 'SwiftGen', '~> 6.0'
 end
 
+def core_interface
+  pod 'GPSCoordinatorInterface', :path => $core_path + 'Coordinator/GPSCoordinatorInterface'
+end
+
+def core
+  pod 'GPSCoordinator', :path => $core_path + 'Coordinator/GPSCoordinator'
+end
+
+def core_testspec
+  pod 'GPSCoordinator', :path => $core_path + 'Coordinator/GPSCoordinator', :testspecs => ['Tests']
+end
+  
 target 'HomeWorkApp' do
   use_frameworks!
   external_pods
+  core_interface
+  core
   
   target 'HomeWorkAppTests' do
     inherit! :search_paths
-    
+    core_testspec
+
   end
 
-  target 'HomeWorkAppUITests' do
-    # Pods for testing
-  end
+  # target 'HomeWorkAppUITests' do
+  #   inherit! :search_paths
+
+  # end
 end

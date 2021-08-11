@@ -1,0 +1,32 @@
+platform :ios, '11.0'
+
+$modules_path = '../../../'
+
+$features_path = $modules_path + 'Services/'
+$tests_path = $modules_path + 'Tests/'
+
+use_frameworks!
+
+def external_pods
+  pod 'SwiftGen', '6.4.0'
+  pod 'SwiftLint'
+end
+
+def features
+  pod 'GPSExtensions', :path => $features_path + 'GPSExtensions'
+end
+
+def features_testspec
+  pod 'GPSExtensions', :path => $features_path + 'GPSExtensions', :testspecs => ['Tests']
+end
+
+target 'GPSExtensionsDemo' do
+  external_pods
+  features
+
+  target 'GPSExtensionsDemoTests' do
+    inherit! :search_paths
+
+    features_testspec
+  end
+end

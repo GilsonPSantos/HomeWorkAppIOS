@@ -16,10 +16,6 @@ def external_pods
   pod 'SwiftGen', '~> 6.0'
 end
 
-def core_interface
-  pod 'GPSCoordinatorInterface', :path => $core_path + 'Coordinator/GPSCoordinatorInterface'
-end
-
 def core_feature_interface
   pod 'GPSCoreFeatureInterface', :path => $core_path + 'CoreFeature/GPSCoreFeatureInterface'
 end

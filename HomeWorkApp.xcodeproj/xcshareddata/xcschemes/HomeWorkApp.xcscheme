@@ -20,20 +20,6 @@
                ReferencedContainer = "container:HomeWorkApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EBD286938178D4F5FBF2DC6416CFA02E"
-               BuildableName = "GPSCoordinator-Unit-Tests.xctest"
-               BlueprintName = "GPSCoordinator-Unit-Tests"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -66,9 +52,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EBD286938178D4F5FBF2DC6416CFA02E"
-               BuildableName = "GPSCoordinator-Unit-Tests.xctest"
-               BlueprintName = "GPSCoordinator-Unit-Tests"
+               BlueprintIdentifier = "8D79FA71844083241F99EB9AB2AF5274"
+               BuildableName = "GPSCoreFeature-Unit-Tests.xctest"
+               BlueprintName = "GPSCoreFeature-Unit-Tests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </TestableReference>

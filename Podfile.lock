@@ -1,17 +1,19 @@
 PODS:
-  - GPSCoordinator (1.0.0):
-    - GPSCoordinatorInterface
-  - GPSCoordinator/Tests (1.0.0):
-    - GPSCoordinatorInterface
-  - GPSCoordinatorInterface (1.0.0)
+  - GPSCoreFeature (1.0.0):
+    - GPSCoreFeatureInterface
+  - GPSCoreFeature/Tests (1.0.0):
+    - GPSCoreFeatureInterface
+  - GPSCoreFeatureInterface (1.0.0):
+    - GPSCoreFeatureInterface/CoordinatorInterface (= 1.0.0)
+  - GPSCoreFeatureInterface/CoordinatorInterface (1.0.0)
   - GPSExtensions (1.0.0)
   - SwiftGen (6.4.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - GPSCoordinator (from `Modules/Core/Coordinator/GPSCoordinator`)
-  - GPSCoordinator/Tests (from `Modules/Core/Coordinator/GPSCoordinator`)
-  - GPSCoordinatorInterface (from `Modules/Core/Coordinator/GPSCoordinatorInterface`)
+  - GPSCoreFeature (from `Modules/Core/CoreFeature/GPSCoreFeature`)
+  - GPSCoreFeature/Tests (from `Modules/Core/CoreFeature/GPSCoreFeature`)
+  - GPSCoreFeatureInterface (from `Modules/Core/CoreFeature/GPSCoreFeatureInterface`)
   - GPSExtensions (from `Modules/Services/GPSExtensions`)
   - SwiftGen (~> 6.0)
   - SwiftLint
@@ -22,20 +24,20 @@ SPEC REPOS:
     - SwiftLint
 
 EXTERNAL SOURCES:
-  GPSCoordinator:
-    :path: Modules/Core/Coordinator/GPSCoordinator
-  GPSCoordinatorInterface:
-    :path: Modules/Core/Coordinator/GPSCoordinatorInterface
+  GPSCoreFeature:
+    :path: Modules/Core/CoreFeature/GPSCoreFeature
+  GPSCoreFeatureInterface:
+    :path: Modules/Core/CoreFeature/GPSCoreFeatureInterface
   GPSExtensions:
     :path: Modules/Services/GPSExtensions
 
 SPEC CHECKSUMS:
-  GPSCoordinator: cac11030203f4e6365714735aa44462f6149aa29
-  GPSCoordinatorInterface: d509e6362ff63845f4c295c81ad7769a99f8e0a7
+  GPSCoreFeature: 50f4c948883b6b4372e6496955fe33f3ab8f1396
+  GPSCoreFeatureInterface: 9bcb749b857a1fa7d567c35e612079d2d21804a2
   GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: c2c7b56fc015d4aa5db0a37fa201d410b4fe9deb
+PODFILE CHECKSUM: d36e2bf26ea5d8d007394ea7b035df4f13bc1a34
 
 COCOAPODS: 1.10.0

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'GPSCoordinator'
+  s.name             = 'GPSCoreFeature'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of GPSCoordinator.'
+  s.summary          = 'A short description of GPSCoreFeature.'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -15,11 +15,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Sources/**/*'
   s.resource_bundles = {
-    'GPSCoordinator' => [ "Resources/Assets/*.xcassets",
+    'GPSCoreFeature' => [ "Resources/Assets/*.xcassets",
                        "Resources/Strings/*.strings" ]
   }
 
-  s.dependency 'GPSCoordinatorInterface'
+  s.dependency 'GPSCoreFeatureInterface'
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/**/*.swift'

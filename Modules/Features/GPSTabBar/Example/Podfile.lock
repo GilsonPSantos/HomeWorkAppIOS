@@ -1,0 +1,74 @@
+PODS:
+  - Cartography (4.0.0)
+  - GPSCoreFeatureInterface/CoordinatorInterface (1.0.0)
+  - GPSCoreFeatureInterface/ModuleInterface (1.0.0)
+  - GPSExtensions (1.0.0)
+  - GPSTabBar (1.0.0):
+    - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
+    - GPSExtensions
+    - PromiseKit
+  - GPSTabBar/Tests (1.0.0):
+    - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
+    - GPSExtensions
+    - PromiseKit
+  - Kingfisher (5.7.0)
+  - lottie-ios (3.1.5)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
+  - SwiftGen (6.4.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Cartography
+  - GPSCoreFeatureInterface/CoordinatorInterface (from `../../../Core/CoreFeature/GPSCoreFeatureInterface`)
+  - GPSCoreFeatureInterface/ModuleInterface (from `../../../Core/CoreFeature/GPSCoreFeatureInterface`)
+  - GPSExtensions (from `../../../Services/GPSExtensions`)
+  - GPSTabBar (from `../../../Features/GPSTabBar`)
+  - GPSTabBar/Tests (from `../../../Features/GPSTabBar`)
+  - Kingfisher (= 5.7.0)
+  - lottie-ios (= 3.1.5)
+  - SwiftGen (= 6.4.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Cartography
+    - Kingfisher
+    - lottie-ios
+    - PromiseKit
+    - SwiftGen
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  GPSCoreFeatureInterface:
+    :path: "../../../Core/CoreFeature/GPSCoreFeatureInterface"
+  GPSExtensions:
+    :path: "../../../Services/GPSExtensions"
+  GPSTabBar:
+    :path: "../../../Features/GPSTabBar"
+
+SPEC CHECKSUMS:
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  GPSCoreFeatureInterface: b559e75f6bb8afdc91f3f1e9d4ed25a6d1a6a735
+  GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
+  GPSTabBar: 7ed9a326f57f0f31efc4fab61737e6ec114fc42b
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: d30e5d9dd0809f2aed21f24acae9684d6ca8565f
+
+COCOAPODS: 1.10.0

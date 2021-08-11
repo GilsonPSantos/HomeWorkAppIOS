@@ -1,6 +1,8 @@
 // swiftlint:disable all
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 
+import GPSExtensions
+
 {% if families %}
 {% set accessModifier %}{% if param.publicAccess %}public{% else %}internal{% endif %}{% endset %}
 {% set fontType %}{{param.fontTypeName|default:"FontConvertible"}}{% endset %}

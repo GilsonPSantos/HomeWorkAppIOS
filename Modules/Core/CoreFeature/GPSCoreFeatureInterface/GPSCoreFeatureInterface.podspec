@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'GPSCoordinatorInterface'
+  s.name             = 'GPSCoreFeatureInterface'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of GPSCoordinatorInterface.'
+  s.summary          = 'A short description of GPSCoreFeatureInterface.'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -13,13 +13,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'Sources/**/*'
-  s.resource_bundles = {
-    'GPSCoordinatorInterface' => [ "Resources/Assets/*.xcassets",
-                       "Resources/Strings/*.strings" ]
-  }
+  s.subspec 'CoordinatorInterface' do |coordinatorInterface|
+    coordinatorInterface.source_files = 'Coordinator/Sources/**/*'
+  end
 
-  s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Tests/**/*.swift'
+  s.subspec 'TabbarInterface' do |tabbar|
+    tabbar.source_files = 'Tabbar/Sources/**/*'
   end
 end

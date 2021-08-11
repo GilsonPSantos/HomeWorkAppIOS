@@ -16,32 +16,32 @@ def external_pods
   pod 'SwiftGen', '~> 6.0'
 end
 
-def core_interface
-  pod 'GPSCoordinatorInterface', :path => $core_path + 'Coordinator/GPSCoordinatorInterface'
+def core_feature_interface
+  pod 'GPSCoreFeatureInterface', :path => $core_path + 'CoreFeature/GPSCoreFeatureInterface'
 end
 
-def core
-  pod 'GPSCoordinator', :path => $core_path + 'Coordinator/GPSCoordinator'
-end
-
-def core_testspec
-  pod 'GPSCoordinator', :path => $core_path + 'Coordinator/GPSCoordinator', :testspecs => ['Tests']
+def core_feature
+  pod 'GPSCoreFeature', :path => $core_path + 'CoreFeature/GPSCoreFeature'
 end
 
 def service
   pod 'GPSExtensions', :path => $service_path + 'GPSExtensions'
 end
+
+def core_feature_testspec
+  pod 'GPSCoreFeature', :path => $core_path + 'CoreFeature/GPSCoreFeature', :testspecs => ['Tests']
+end
   
 target 'HomeWorkApp' do
   use_frameworks!
   external_pods
-  core_interface
-  core
+  core_feature_interface
+  core_feature
   service
   
   target 'HomeWorkAppTests' do
     inherit! :search_paths
-    core_testspec
+    core_feature_testspec
 
   end
 

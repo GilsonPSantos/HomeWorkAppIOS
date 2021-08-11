@@ -15,6 +15,7 @@
 		448A779F2689F27200B63773 /* HomeWorkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A779E2689F27200B63773 /* HomeWorkAppUITests.swift */; };
 		448A77F3268A2F6700B63773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448A77F2268A2F6700B63773 /* Localizable.strings */; };
 		4DCC0D9C2A775B9077297235 /* Pods_HomeWorkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A3EB3439E7DD54792AA7F2 /* Pods_HomeWorkAppTests.framework */; };
+		5525907B236F781EACB7F9AC /* Pods_HomeWorkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DBF63B9D411557D4F038AA /* Pods_HomeWorkAppUITests.framework */; };
 		B75A6FE40C34A466299682DB /* Pods_HomeWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2951F3AC9A767867513D5301 /* Pods_HomeWorkApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		2951F3AC9A767867513D5301 /* Pods_HomeWorkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368F47CDB416EFA81670A979 /* Pods-HomeWorkApp.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.mock.xcconfig"; sourceTree = "<group>"; };
 		36A3EB3439E7DD54792AA7F2 /* Pods_HomeWorkAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37DBF63B9D411557D4F038AA /* Pods_HomeWorkAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWorkAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A77792689F26F00B63773 /* HomeWorkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A777C2689F26F00B63773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448A77802689F26F00B63773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,9 @@
 		56247EC79EE6A88F4854B176 /* Pods-HomeWorkAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		590F627C56881A718A823ECE /* Pods-HomeWorkAppTests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppTests.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppTests/Pods-HomeWorkAppTests.mock.xcconfig"; sourceTree = "<group>"; };
 		656EB2E9CD8E056CD44070A5 /* Pods-HomeWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
+		83FAFD151D6C2CBC7B8DD45D /* Pods-HomeWorkAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppUITests/Pods-HomeWorkAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2D5F030DEC64A9AB900CE44 /* Pods-HomeWorkAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppUITests/Pods-HomeWorkAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5C9C45FFDC896F2F0FE44C2 /* Pods-HomeWorkAppUITests.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkAppUITests.mock.xcconfig"; path = "Target Support Files/Pods-HomeWorkAppUITests/Pods-HomeWorkAppUITests.mock.xcconfig"; sourceTree = "<group>"; };
 		E7EA8665627A587E16419D38 /* Pods-HomeWorkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWorkApp.release.xcconfig"; path = "Target Support Files/Pods-HomeWorkApp/Pods-HomeWorkApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5525907B236F781EACB7F9AC /* Pods_HomeWorkAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +190,7 @@
 			children = (
 				2951F3AC9A767867513D5301 /* Pods_HomeWorkApp.framework */,
 				36A3EB3439E7DD54792AA7F2 /* Pods_HomeWorkAppTests.framework */,
+				37DBF63B9D411557D4F038AA /* Pods_HomeWorkAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,6 +204,9 @@
 				56247EC79EE6A88F4854B176 /* Pods-HomeWorkAppTests.debug.xcconfig */,
 				590F627C56881A718A823ECE /* Pods-HomeWorkAppTests.mock.xcconfig */,
 				0924D3E833F3679DE138F50E /* Pods-HomeWorkAppTests.release.xcconfig */,
+				C2D5F030DEC64A9AB900CE44 /* Pods-HomeWorkAppUITests.debug.xcconfig */,
+				D5C9C45FFDC896F2F0FE44C2 /* Pods-HomeWorkAppUITests.mock.xcconfig */,
+				83FAFD151D6C2CBC7B8DD45D /* Pods-HomeWorkAppUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -248,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448A77A92689F27200B63773 /* Build configuration list for PBXNativeTarget "HomeWorkAppUITests" */;
 			buildPhases = (
+				C7DB4E757A18919645358164 /* [CP] Check Pods Manifest.lock */,
 				448A77962689F27200B63773 /* Sources */,
 				448A77972689F27200B63773 /* Frameworks */,
 				448A77982689F27200B63773 /* Resources */,
@@ -422,6 +433,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HomeWorkApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7DB4E757A18919645358164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWorkAppUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -685,6 +718,7 @@
 		};
 		448A77AA2689F27200B63773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D5F030DEC64A9AB900CE44 /* Pods-HomeWorkAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -704,6 +738,7 @@
 		};
 		448A77AB2689F27200B63773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FAFD151D6C2CBC7B8DD45D /* Pods-HomeWorkAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -826,6 +861,7 @@
 		};
 		448A77EC268A2B5400B63773 /* Mock */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C9C45FFDC896F2F0FE44C2 /* Pods-HomeWorkAppUITests.mock.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;

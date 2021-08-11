@@ -1,7 +1,7 @@
 import Foundation
 import GPSCoordinatorInterface
 
-final class MainCoordinator: CoordinatorProtocol {
+final class MainCoordinator {
     weak var rootViewController: UIViewController?
 
     func initialize() -> UIViewController {

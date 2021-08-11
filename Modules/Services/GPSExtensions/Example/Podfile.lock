@@ -1,0 +1,29 @@
+PODS:
+  - GPSExtensions (1.0.0)
+  - GPSExtensions/Tests (1.0.0)
+  - SwiftGen (6.4.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - GPSExtensions (from `../../../Services/GPSExtensions`)
+  - GPSExtensions/Tests (from `../../../Services/GPSExtensions`)
+  - SwiftGen (= 6.4.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwiftGen
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  GPSExtensions:
+    :path: "../../../Services/GPSExtensions"
+
+SPEC CHECKSUMS:
+  GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: ccfea9bcbae3da381431617bf826a343cb8ebe57
+
+COCOAPODS: 1.10.1

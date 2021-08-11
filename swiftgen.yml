@@ -1,0 +1,26 @@
+
+strings:
+
+    # MyTempleApp
+    - inputs: HomeWorkApp/Resources/Strings/Localizable.strings
+      outputs:
+      - templatePath: SwiftGen/strings/custom-structured-swift5.stencil
+        output: HomeWorkApp/Sources/Generated/S.swift
+
+# colors:
+
+#     # HomeWorkApp
+#     - inputs: HomeWorkApp/Resources/Colors/Color.json
+#       outputs:
+#       - templatePath: SwiftGen/colors/custom-swift5.stencil
+#         output: HomeWorkApp/Sources/Generated/Color.swift
+#         params:
+#           enumName: DesignSystem
+
+# fonts:
+
+#     # HomeWorkApp
+#     - inputs: HomeWorkApp/Resources/Fonts
+#       outputs:
+#       - templatePath: SwiftGen/fonts/custom-swift5.stencil
+#         output: HomeWorkApp/Sources/Generated/Fonts.swift

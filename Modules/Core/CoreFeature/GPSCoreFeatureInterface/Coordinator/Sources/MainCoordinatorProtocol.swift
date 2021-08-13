@@ -1,10 +1,3 @@
-//
-//  MainCoordinatorProtocol.swift
-//  GPSCoordinatorInterface
-//
-//  Created by Gilson Santos on 11/08/21.
-//
-
 import Foundation
 
 public protocol MainCoordinatorProtocol: BaseCoordinatorProtocol {
@@ -14,7 +7,7 @@ public protocol MainCoordinatorProtocol: BaseCoordinatorProtocol {
     func popToRoot()
 }
 
-extension MainCoordinatorProtocol {
+public extension MainCoordinatorProtocol {
     func didFinishChild(_ child: CoordinatorProtocol) {
         childCoordinators.removeAll {
             $0 === child

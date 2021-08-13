@@ -17,6 +17,10 @@ TODO: Add long description of the pod here.
     coordinatorInterface.source_files = 'Coordinator/Sources/**/*'
   end
 
+  s.subspec 'ModuleInterface' do |moduleInterface|
+    moduleInterface.source_files = 'Module/Sources/**/*'
+  end
+
   s.subspec 'TabbarInterface' do |tabbar|
     tabbar.source_files = 'Tabbar/Sources/**/*'
   end

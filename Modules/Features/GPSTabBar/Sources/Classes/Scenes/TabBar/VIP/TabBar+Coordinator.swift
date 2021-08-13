@@ -8,14 +8,38 @@ protocol TabBarCoordinatorProtocol: MainCoordinatorProtocol {
 extension TabBar {
     final class Coordinator: NSObject, TabBarCoordinatorProtocol {
         var viewControllerType: UIViewController.Type = ViewController.self
-        var childCoordinators: [CoordinatorProtocol] = []
+        private let dependencies: Dependencies
+        var childCoordinators: [CoordinatorProtocol]
         weak var rootViewController: UIViewController?
+
+        init(childCoordinators: [CoordinatorProtocol] = [],
+             dependencies: Dependencies,
+             rootViewController: UIViewController? = nil)
+        {
+            self.childCoordinators = childCoordinators
+            self.dependencies = dependencies
+            self.rootViewController = rootViewController
+        }
+
+        func start() {
+            let tabBarController = initialize()
+            rootViewController?.present(tabBarController, animated: true)
+        }
 
         func initialize() -> UIViewController {
             let coordinator = self
             let presenter = Presenter()
-            let interactor = Interactor(presenter: presenter, coordinator: coordinator)
+            let dataStore = DataStore(itensTabBar: dependencies.itensTabBar)
+            let interactor = Interactor(dataStore: dataStore,
+                                        presenter: presenter,
+                                        coordinator: coordinator)
             let viewController = ViewController(interactor: interactor)
+            viewController.modalPresentationStyle = .fullScreen
+            viewController.viewControllers = dataStore.itensTabBar.compactMap {
+                $0.start()
+                return $0.rootViewController
+            }
+            presenter.viewController = viewController
             return viewController
         }
     }

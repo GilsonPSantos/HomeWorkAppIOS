@@ -1,3 +1,9 @@
+import GPSCoreFeatureInterface
+
 public struct Dependencies {
-    public init(){}
+    let itensTabBar: [MainCoordinatorProtocol]
+
+    public init(itensTabBar: [MainCoordinatorProtocol]) {
+        self.itensTabBar = itensTabBar
+    }
 }

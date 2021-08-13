@@ -1,10 +1,3 @@
-//
-//  MainCoordinatorProtocol.swift
-//  GPSCoordinatorInterface
-//
-//  Created by Gilson Santos on 11/08/21.
-//
-
 import Foundation
 
 public protocol MainCoordinatorProtocol: BaseCoordinatorProtocol {

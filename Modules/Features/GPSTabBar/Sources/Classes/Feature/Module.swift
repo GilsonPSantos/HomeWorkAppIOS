@@ -8,7 +8,11 @@ public struct Module: ModuleProtocol {
         self.dependencies = dependencies
     }
 
-    public func createInitialScene(rootViewController: UIViewController?) -> UIViewController {
-        return TabBar.Coordinator().initialize()
+    public func createInitialScene(rootViewController: UIViewController?) {
+        TabBar.Coordinator(dependencies: dependencies, rootViewController: rootViewController).start()
+    }
+
+    public func createCoordinator(rootViewController: UIViewController?) -> BaseCoordinatorProtocol {
+        TabBar.Coordinator(dependencies: dependencies, rootViewController: rootViewController)
     }
 }

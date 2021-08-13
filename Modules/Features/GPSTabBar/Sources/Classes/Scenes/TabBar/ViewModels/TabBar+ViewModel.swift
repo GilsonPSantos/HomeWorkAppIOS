@@ -11,6 +11,5 @@ extension TabBar {
         }
         let sceneTitle: String
         let elements: [ElementViewModel]
-
     }
 }

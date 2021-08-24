@@ -1,0 +1,63 @@
+PODS:
+  - Cartography (4.0.0)
+  - GPSExtensions (1.0.0)
+  - GPSHome (1.0.0):
+    - Cartography
+    - GPSExtensions
+    - PromiseKit
+  - GPSHome/Tests (1.0.0):
+    - Cartography
+    - GPSExtensions
+    - PromiseKit
+  - Kingfisher (5.7.0)
+  - lottie-ios (3.1.5)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
+  - SwiftGen (6.4.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Cartography
+  - GPSExtensions (from `../../../Services/GPSExtensions`)
+  - GPSHome (from `../../../Features/GPSHome`)
+  - GPSHome/Tests (from `../../../Features/GPSHome`)
+  - Kingfisher (= 5.7.0)
+  - lottie-ios (= 3.1.5)
+  - SwiftGen (= 6.4.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Cartography
+    - Kingfisher
+    - lottie-ios
+    - PromiseKit
+    - SwiftGen
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  GPSExtensions:
+    :path: "../../../Services/GPSExtensions"
+  GPSHome:
+    :path: "../../../Features/GPSHome"
+
+SPEC CHECKSUMS:
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
+  GPSHome: 06993aa18c172d76e4f5ff08381ab053d79bf976
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 8b1eb026d2981d9f39164f0b61eca049a757d359
+
+COCOAPODS: 1.10.0

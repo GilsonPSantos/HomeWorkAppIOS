@@ -1,0 +1,37 @@
+platform :ios, '11.0'
+
+$modules_path = '../../../'
+
+$features_path = $modules_path + 'Features/'
+$service_path = $modules_path + 'Services/'
+$tests_path = $modules_path + 'Tests/'
+
+use_frameworks!
+
+def external_pods
+  pod 'Cartography'
+  pod 'Kingfisher', '5.7.0'
+  pod 'SwiftGen', '6.4.0'
+  pod 'SwiftLint'
+  pod 'lottie-ios', '3.1.5'
+end
+
+def features
+  pod 'GPSHome', :path => $features_path + 'GPSHome'
+  pod 'GPSExtensions', :path => $service_path + 'GPSExtensions'
+end
+
+def features_testspec
+  pod 'GPSHome', :path => $features_path + 'GPSHome', :testspecs => ['Tests']
+end
+
+target 'GPSHomeDemo' do
+  external_pods
+  features
+
+  target 'GPSHomeDemoTests' do
+    inherit! :search_paths
+
+    features_testspec
+  end
+end

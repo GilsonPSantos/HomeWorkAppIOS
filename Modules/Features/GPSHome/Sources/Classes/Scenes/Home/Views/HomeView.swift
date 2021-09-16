@@ -5,15 +5,31 @@ protocol HomeViewProtocol where Self: UIView {
     func setup(delegate: HomeViewDelegate)
 }
 
-protocol HomeViewDelegate: NSObject { }
+typealias HomeViewDelegate = UITableViewDataSource & UITableViewDelegate
 
 final class HomeView: UIView, HomeViewProtocol {
     static func make() -> HomeViewProtocol {
-        return HomeView()
+        return HomeView(tableView: tableView())
     }
 
-    override init(frame: CGRect = .zero)
+    private static func tableView() -> UITableView {
+        let tableView = UITableView(frame: .zero)
+        tableView.tableFooterView = UIView()
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 150
+        tableView.backgroundColor = .white
+        tableView.register(HomeCell.self)
+        return tableView
+    }
+
+    private let tableView: UITableView
+
+    init(frame: CGRect = .zero,
+         tableView: UITableView)
     {
+        self.tableView = tableView
         super.init(frame: frame)
         setup()
     }
@@ -23,8 +39,19 @@ final class HomeView: UIView, HomeViewProtocol {
     }
 
     private func setup() {
-        backgroundColor = UIColor.blue
+        backgroundColor = .white
+        setupTableView()
     }
 
-    func setup(delegate: HomeViewDelegate) {}
+    private func setupTableView() {
+        addSubview(tableView)
+        constrain(tableView, self) { view, superView in
+            view.edges == superView.safeAreaLayoutGuide.edges
+        }
+    }
+
+    func setup(delegate: HomeViewDelegate) {
+        self.tableView.delegate = delegate
+        self.tableView.dataSource = delegate
+    }
 }

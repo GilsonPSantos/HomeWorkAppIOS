@@ -31,4 +31,15 @@ extension Home {
     }
 }
 
+extension Home.ViewController: HomeViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeue(cell: HomeCell.self) ?? UITableViewCell()
+        return cell
+    }
+}
+
 extension Home.ViewController: HomePresenterDelegate {}

@@ -36,6 +36,7 @@ extension Home {
             let viewController = ViewController(interactor: interactor,
                                                 customView: view,
                                                 coordinator: coordinator)
+            view.setup(delegate: viewController)
             presenter.viewController = viewController
 
             return UINavigationController(rootViewController: viewController)

@@ -4,11 +4,11 @@ extension Home {
     final class ViewController: UIViewController {
         private let interactor: HomeInteractorProtocol
         private let customView: HomeViewProtocol
-        private let coordinator: MySceneCoordinatorProtocol
+        private let coordinator: HomeCoordinatorProtocol
 
         init(interactor: HomeInteractorProtocol,
              customView: HomeViewProtocol,
-             coordinator: MySceneCoordinatorProtocol)
+             coordinator: HomeCoordinatorProtocol)
         {
             self.interactor = interactor
             self.customView = customView

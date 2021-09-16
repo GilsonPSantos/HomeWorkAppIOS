@@ -1,12 +1,18 @@
 PODS:
   - Cartography (4.0.0)
+  - GPSCoreFeatureInterface/CoordinatorInterface (1.0.0)
+  - GPSCoreFeatureInterface/ModuleInterface (1.0.0)
   - GPSExtensions (1.0.0)
   - GPSHome (1.0.0):
     - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
     - GPSExtensions
     - PromiseKit
   - GPSHome/Tests (1.0.0):
     - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
     - GPSExtensions
     - PromiseKit
   - Kingfisher (5.7.0)
@@ -25,6 +31,8 @@ PODS:
 
 DEPENDENCIES:
   - Cartography
+  - GPSCoreFeatureInterface/CoordinatorInterface (from `../../../Core/CoreFeature/GPSCoreFeatureInterface`)
+  - GPSCoreFeatureInterface/ModuleInterface (from `../../../Core/CoreFeature/GPSCoreFeatureInterface`)
   - GPSExtensions (from `../../../Services/GPSExtensions`)
   - GPSHome (from `../../../Features/GPSHome`)
   - GPSHome/Tests (from `../../../Features/GPSHome`)
@@ -43,6 +51,8 @@ SPEC REPOS:
     - SwiftLint
 
 EXTERNAL SOURCES:
+  GPSCoreFeatureInterface:
+    :path: "../../../Core/CoreFeature/GPSCoreFeatureInterface"
   GPSExtensions:
     :path: "../../../Services/GPSExtensions"
   GPSHome:
@@ -50,14 +60,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  GPSCoreFeatureInterface: b559e75f6bb8afdc91f3f1e9d4ed25a6d1a6a735
   GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
-  GPSHome: 06993aa18c172d76e4f5ff08381ab053d79bf976
+  GPSHome: ed27230334d32be2fe4924a2cc375a82e99a0457
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
   PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 8b1eb026d2981d9f39164f0b61eca049a757d359
+PODFILE CHECKSUM: 9f82a072059cbb852755d7eeb7bf278d3da27acd
 
 COCOAPODS: 1.10.0

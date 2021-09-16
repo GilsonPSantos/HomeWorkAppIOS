@@ -24,6 +24,8 @@ TODO: Add long description of the pod here.
   s.dependency 'Cartography'
   s.dependency 'PromiseKit'
   s.dependency 'GPSExtensions'
+  s.dependency 'GPSCoreFeatureInterface/CoordinatorInterface'
+  s.dependency 'GPSCoreFeatureInterface/ModuleInterface'
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/**/*.swift'

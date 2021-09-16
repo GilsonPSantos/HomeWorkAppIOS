@@ -280,6 +280,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPSHomeDemo/Pods-GPSHomeDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/GPSCoreFeatureInterface/GPSCoreFeatureInterface.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSExtensions/GPSExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSHome/GPSHome.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -289,6 +290,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSCoreFeatureInterface.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSHome.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -347,6 +349,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPSHomeDemoTests/Pods-GPSHomeDemoTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/GPSCoreFeatureInterface/GPSCoreFeatureInterface.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSExtensions/GPSExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSHome/GPSHome.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
@@ -354,6 +357,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSCoreFeatureInterface.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSHome.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",

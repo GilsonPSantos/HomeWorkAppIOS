@@ -23,7 +23,7 @@ class HomeCell: UITableViewCell {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         label.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         label.textAlignment = .left
         label.text = "Grupo da familia"
@@ -52,7 +52,7 @@ class HomeCell: UITableViewCell {
             view.trailing == superView.trailing - 16
             view.top == superView.top + 16
             view.bottom == superView.bottom - 16
-            view.height == 100
+            view.height == 70
         }
         setupLineView()
         setupTitleLabel()

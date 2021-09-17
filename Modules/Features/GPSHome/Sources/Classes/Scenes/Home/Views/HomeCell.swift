@@ -50,8 +50,8 @@ class HomeCell: UITableViewCell {
         constrain(containerView, contentView) { view, superView in
             view.leading == superView.leading + 16
             view.trailing == superView.trailing - 16
-            view.top == superView.top + 16
-            view.bottom == superView.bottom - 16
+            view.top == superView.top + 10
+            view.bottom == superView.bottom - 10
             view.height == 70
         }
         setupLineView()

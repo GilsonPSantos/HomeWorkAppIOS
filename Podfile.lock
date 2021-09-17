@@ -5,8 +5,10 @@ PODS:
     - GPSCoreFeatureInterface
   - GPSCoreFeatureInterface (1.0.0):
     - GPSCoreFeatureInterface/CoordinatorInterface (= 1.0.0)
+    - GPSCoreFeatureInterface/ModuleInterface (= 1.0.0)
     - GPSCoreFeatureInterface/TabbarInterface (= 1.0.0)
   - GPSCoreFeatureInterface/CoordinatorInterface (1.0.0)
+  - GPSCoreFeatureInterface/ModuleInterface (1.0.0)
   - GPSCoreFeatureInterface/TabbarInterface (1.0.0)
   - GPSExtensions (1.0.0)
   - SwiftGen (6.4.0)
@@ -35,7 +37,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GPSCoreFeature: 50f4c948883b6b4372e6496955fe33f3ab8f1396
-  GPSCoreFeatureInterface: f1d5263e455b502e791ea1a0b899174c910ba0e8
+  GPSCoreFeatureInterface: b559e75f6bb8afdc91f3f1e9d4ed25a6d1a6a735
   GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52

@@ -1,0 +1,16 @@
+{
+    "navigation": {
+        "backgroundColor": "8E5AF7",
+        "tintColor": "FFFFFF"
+    },
+    "primaryButton": {
+        "backgroundColor": "8E5AF7",
+        "textColor": "FFFFFF",
+        "disabledColor": "CDCDCD"
+    },
+    "secondaryButton": {
+        "backgroundColor": "8E5AF7",
+        "textColor": "FFFFFF",
+        "disabledColor": "CDCDCD"
+    }
+}

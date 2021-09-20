@@ -17,6 +17,10 @@ def external_pods
   pod 'lottie-ios', '3.1.5'
 end
 
+def core
+  pod 'GPSUI', :path => $core_path + 'UI/GPSUI'
+end
+
 def features
   pod 'GPSHome', :path => $features_path + 'GPSHome'
 end
@@ -36,6 +40,7 @@ end
 
 target 'GPSHomeDemo' do
   external_pods
+  core
   features
   core_feature_interface
   services

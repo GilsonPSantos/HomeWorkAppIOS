@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'GPSHome'
+  s.name             = 'GPSUI'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of GPSHome.'
+  s.summary          = 'A short description of GPSUI.'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -14,18 +14,14 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/**/*'
-  s.resource_bundles = {
-    'GPSHome' => [ "Resources/Assets/*.xcassets",
-                       "Resources/Strings/*.strings" ]
-  }
 
-  s.frameworks = 'UIKit'
-  s.dependency 'GPSUI'
-  s.dependency 'Cartography'
-  s.dependency 'PromiseKit'
   s.dependency 'GPSExtensions'
-  s.dependency 'GPSCoreFeatureInterface/CoordinatorInterface'
-  s.dependency 'GPSCoreFeatureInterface/ModuleInterface'
+
+  s.resource_bundles = {
+    'GPSUI' => [ "Resources/Assets/*.xcassets",
+                "Resources/Strings/*.strings",
+                "Resources/Json/*.json"]
+  }
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/**/*.swift'

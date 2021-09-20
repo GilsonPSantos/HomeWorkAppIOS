@@ -1,7 +1,8 @@
 import Foundation
 
 protocol HomeInteractorProtocol {
-    func fetchMySceneData()
+    func fetchData()
+    func createGroup()
 }
 
 extension Home {
@@ -19,6 +20,10 @@ extension Home {
             self.dataProvider = dataProvider
         }
 
-        func fetchMySceneData() {}
+        func fetchData() {}
+
+        func createGroup() {
+            print("createGroup called")
+        }
     }
 }

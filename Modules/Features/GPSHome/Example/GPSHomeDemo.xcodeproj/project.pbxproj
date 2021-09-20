@@ -283,6 +283,7 @@
 				"${BUILT_PRODUCTS_DIR}/GPSCoreFeatureInterface/GPSCoreFeatureInterface.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSExtensions/GPSExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSHome/GPSHome.framework",
+				"${BUILT_PRODUCTS_DIR}/GPSUI/GPSUI.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
@@ -293,6 +294,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSCoreFeatureInterface.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSHome.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
@@ -352,6 +354,7 @@
 				"${BUILT_PRODUCTS_DIR}/GPSCoreFeatureInterface/GPSCoreFeatureInterface.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSExtensions/GPSExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/GPSHome/GPSHome.framework",
+				"${BUILT_PRODUCTS_DIR}/GPSUI/GPSUI.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -360,6 +363,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSCoreFeatureInterface.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSHome.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPSUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

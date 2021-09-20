@@ -1,7 +1,7 @@
-import UIKit
+import GPSUI
 
 extension Home {
-    final class ViewController: UIViewController {
+    final class ViewController: GPSUI.ViewController {
         private let interactor: HomeInteractorProtocol
         private let customView: HomeViewProtocol
         private let coordinator: HomeCoordinatorProtocol
@@ -26,7 +26,17 @@ extension Home {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            interactor.fetchMySceneData()
+            setupButtonNavigation()
+            setTitle(title: "Meus Grupos")
+            interactor.fetchData()
+        }
+
+        private func setupButtonNavigation() {
+            addNavigationButton(type: .add, target: #selector(addGroup), position: .right)
+        }
+
+        @objc private func addGroup() {
+            interactor.createGroup()
         }
     }
 }

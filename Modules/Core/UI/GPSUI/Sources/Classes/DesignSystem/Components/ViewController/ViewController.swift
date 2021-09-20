@@ -23,8 +23,8 @@ open class ViewController: UIViewController {
     }
 
     private func setupNavigationColor() {
-        navigationController?.navigationBar.barTintColor = DesignSystemApp.shared.designSystem.navigation.backgroundColor.hexStringToUIColor()
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: DesignSystemApp.shared.designSystem.navigation.tintColor.hexStringToUIColor()]
+        navigationController?.navigationBar.barTintColor = DesignSystemApp.shared.designSystem.navigation.backgroundColor
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: DesignSystemApp.shared.designSystem.navigation.tintColor]
     }
 
     public func setTitle(title: String) {
@@ -50,7 +50,7 @@ open class ViewController: UIViewController {
 
     private func createButtonBar(type: UIBarButtonItem.SystemItem, target: Selector) -> UIBarButtonItem {
         let button = UIBarButtonItem(barButtonSystemItem: type, target: self, action: target)
-        button.tintColor = DesignSystemApp.shared.designSystem.navigation.tintColor.hexStringToUIColor()
+        button.tintColor = DesignSystemApp.shared.designSystem.navigation.tintColor
         return button
     }
 }

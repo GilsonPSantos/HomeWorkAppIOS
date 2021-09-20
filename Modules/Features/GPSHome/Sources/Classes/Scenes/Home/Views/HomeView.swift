@@ -1,5 +1,5 @@
 import Cartography
-import UIKit
+import GPSUI
 
 protocol HomeViewProtocol where Self: UIView {
     func setup(delegate: HomeViewDelegate)
@@ -19,7 +19,7 @@ final class HomeView: UIView, HomeViewProtocol {
         tableView.showsVerticalScrollIndicator = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 150
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         tableView.register(HomeCell.self)
         return tableView
     }
@@ -39,7 +39,7 @@ final class HomeView: UIView, HomeViewProtocol {
     }
 
     private func setup() {
-        backgroundColor = .white
+        backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         setupTableView()
     }
 

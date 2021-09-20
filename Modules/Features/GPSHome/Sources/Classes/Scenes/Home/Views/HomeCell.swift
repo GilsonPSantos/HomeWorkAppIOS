@@ -1,5 +1,5 @@
-import UIKit
 import Cartography
+import GPSUI
 
 class HomeCell: UITableViewCell {
     private let containerView: UIView = {
@@ -7,7 +7,7 @@ class HomeCell: UITableViewCell {
         view.addBoarder()
         view.addCornerRadius()
         view.addShadow()
-        view.backgroundColor = .white
+        view.backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         return view
     }()
 
@@ -16,7 +16,7 @@ class HomeCell: UITableViewCell {
         view.clipsToBounds = true
         view.layer.cornerRadius = 8
         view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
-        view.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        view.backgroundColor = DesignSystemApp.shared.designSystem.labelTitle.textColor
 
         return view
     }()
@@ -24,7 +24,7 @@ class HomeCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        label.textColor = DesignSystemApp.shared.designSystem.labelTitle.textColor
         label.textAlignment = .left
         label.text = "Grupo da familia"
         return label
@@ -40,7 +40,7 @@ class HomeCell: UITableViewCell {
     }
 
     private func setup() {
-        backgroundColor = .white
+        backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         selectionStyle = .none
         setupContainerView()
     }

@@ -22,8 +22,7 @@ extension TabBar {
         }
 
         func start() {
-            let tabBarController = initialize()
-            rootViewController?.present(tabBarController, animated: true)
+            rootViewController = initialize()
         }
 
         func initialize() -> UIViewController {

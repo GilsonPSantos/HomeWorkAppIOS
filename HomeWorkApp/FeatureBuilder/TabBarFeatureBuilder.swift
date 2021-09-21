@@ -3,7 +3,6 @@ import GPSCoreFeatureInterface
 import GPSTabBar
 
 final class TabBarFeatureBuilder: FeatureBuilderProtocol {
-
     private let featureItens: [FeatureBuilderProtocol]
 
     init(featureItens: [FeatureBuilderProtocol]) {

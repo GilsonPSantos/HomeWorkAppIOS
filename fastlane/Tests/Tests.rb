@@ -1,5 +1,5 @@
 def devices
-    [ "iPhone 11 (14.5)" ]
+    [ "iPhone 8 (14.4)" ]
 end
 
 desc "Lane to run all the main app tests"

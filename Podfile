@@ -44,9 +44,4 @@ target 'HomeWorkApp' do
     core_feature_testspec
 
   end
-
-  target 'HomeWorkAppUITests' do
-    inherit! :search_paths
-
-  end
 end

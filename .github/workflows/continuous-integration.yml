@@ -18,27 +18,17 @@ jobs:
 
         strategy:
             matrix:
-                destination: ['platform=iOS Simulator,OS=14.5,name=iPhone 11']
-                xcode: ['/Applications/Xcode_12.5.app/Contents/Developer']
+                destination: ['platform=iOS Simulator,OS=11.4,name=iPhone 11']
+                xcode: ['/Applications/Xcode_12.0.app/Contents/Developer']
         steps:
 
         - name: Checkout in merge commit
           uses: actions/checkout@v2
 
-        # - name: Get ssh key
-        #   uses: webfactory/ssh-agent@v0.4.1
-        #   with:
-        #       ssh-private-key: ${{ secrets.BOT_SSH_KEY }}
-
         - name: Setup ruby
           uses: ruby/setup-ruby@v1
           with:
               bundler-cache: true
-
-        # - name: Fetch pre compiled pods
-        #   run: bundle exec pod binary fetch
-        #   env:
-        #       DEVELOPER_DIR: ${{ matrix.xcode }}
 
         - name: Dependencies
           run: bundle exec pod install

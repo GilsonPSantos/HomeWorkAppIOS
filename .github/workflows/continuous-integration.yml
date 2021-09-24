@@ -18,12 +18,15 @@ jobs:
 
         strategy:
             matrix:
-                destination: ['platform=iOS Simulator,OS=11.4,name=iPhone 11']
-                xcode: ['/Applications/Xcode_12.app/Contents/Developer']
+                destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8', 'platform=iOS Simulator,OS=13.1,name=iPhone 9']
+                xcode: ['/Applications/Xcode_12.3.app/Contents/Developer']
         steps:
 
         - name: Checkout in merge commit
           uses: actions/checkout@v2
+
+        - name: Bundle Install
+          run: bundle install
 
         - name: Setup ruby
           uses: ruby/setup-ruby@v1
@@ -40,42 +43,3 @@ jobs:
           env:
               destination: ${{ matrix.destination }}
               DEVELOPER_DIR: ${{ matrix.xcode }}
-
-        - name: Archive Tests artifacts
-          if: failure()
-          uses: actions/upload-artifact@v1
-          with:
-              name: errors.json
-              path: build/reports
-
-    security_scan:
-        if: ${{ contains(github.event.pull_request.title, '[ci skip]') == false &&
-                contains(github.event.pull_request.title, '[CI SKIP]') == false &&
-                github.event.label.name == 'run-ci' }}
-
-        runs-on: ubuntu-latest
-        steps:
-
-        - name: Checkout in merge commit
-          uses: actions/checkout@v2
-
-        - name: Download insider
-          run: wget https://github.com/insidersec/insider/releases/download/3.0.0/insider_3.0.0_linux_x86_64.tar.gz
-
-        - name: Extract insider
-          run: tar -zxvf insider_3.0.0_linux_x86_64.tar.gz
-
-        - name: Run insider
-          run: ./insider -tech ios -target $GITHUB_WORKSPACE -quiet
-
-        - name: Upload Report Scan Analysis HTML Result
-          uses: actions/upload-artifact@v2
-          with:
-              name: report.html
-              path: report.html
-
-        - name: Upload Report Scan Analysis JSON Result
-          uses: actions/upload-artifact@v2
-          with:
-              name: report.json
-              path: report.json

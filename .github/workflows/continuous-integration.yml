@@ -1,0 +1,96 @@
+on:
+    pull_request:
+        types: [labeled]
+
+    issue_comment:
+        types: [created, edited]
+
+
+name: Run tests
+jobs:
+    test:
+        if: ${{ contains(github.event.pull_request.title, '[ci skip]') == false &&
+                contains(github.event.pull_request.title, '[CI SKIP]') == false &&
+                github.event.label.name == 'run-ci' }}
+
+        name: Tests
+        runs-on: macos-11
+
+        strategy:
+            matrix:
+                destination: ['platform=iOS Simulator,OS=14.5,name=iPhone 11']
+                xcode: ['/Applications/Xcode_12.5.app/Contents/Developer']
+        steps:
+
+        - name: Checkout in merge commit
+          uses: actions/checkout@v2
+
+        # - name: Get ssh key
+        #   uses: webfactory/ssh-agent@v0.4.1
+        #   with:
+        #       ssh-private-key: ${{ secrets.BOT_SSH_KEY }}
+
+        - name: Setup ruby
+          uses: ruby/setup-ruby@v1
+          with:
+              bundler-cache: true
+
+        # - name: Fetch pre compiled pods
+        #   run: bundle exec pod binary fetch
+        #   env:
+        #       DEVELOPER_DIR: ${{ matrix.xcode }}
+
+        - name: Dependencies
+          run: bundle exec pod install
+          env:
+              DEVELOPER_DIR: ${{ matrix.xcode }}
+
+        - name: Build and test
+          run: bundle exec fastlane tests
+          env:
+              destination: ${{ matrix.destination }}
+              DEVELOPER_DIR: ${{ matrix.xcode }}
+
+        # - name: Execute danger
+        #   run: bundle exec danger
+        #   env:
+        #       DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+
+        - name: Archive Tests artifacts
+          if: failure()
+          uses: actions/upload-artifact@v1
+          with:
+              name: errors.json
+              path: build/reports
+
+    security_scan:
+        if: ${{ contains(github.event.pull_request.title, '[ci skip]') == false &&
+                contains(github.event.pull_request.title, '[CI SKIP]') == false &&
+                github.event.label.name == 'run-ci' }}
+
+        runs-on: ubuntu-latest
+        steps:
+
+        - name: Checkout in merge commit
+          uses: actions/checkout@v2
+
+        - name: Download insider
+          run: wget https://github.com/insidersec/insider/releases/download/3.0.0/insider_3.0.0_linux_x86_64.tar.gz
+
+        - name: Extract insider
+          run: tar -zxvf insider_3.0.0_linux_x86_64.tar.gz
+
+        - name: Run insider
+          run: ./insider -tech ios -target $GITHUB_WORKSPACE -quiet
+
+        - name: Upload Report Scan Analysis HTML Result
+          uses: actions/upload-artifact@v2
+          with:
+              name: report.html
+              path: report.html
+
+        - name: Upload Report Scan Analysis JSON Result
+          uses: actions/upload-artifact@v2
+          with:
+              name: report.json
+              path: report.json

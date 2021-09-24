@@ -22,7 +22,6 @@ class HomeWorkAppTests: XCTestCase {
         XCTAssertFalse(true)
         XCTAssertFalse(true)
         XCTAssertFalse(true)
-        XCTAssertFalse(true)
     }
 
     func testPerformanceExample() throws {

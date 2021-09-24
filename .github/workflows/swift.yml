@@ -7,13 +7,15 @@ on:
     branches: [ dev ]
 
 jobs:
-  build:
+  test:
 
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
+    - name: Bundle Install
+      run: bundle install
+    - name: Dependencies
+      run: bundle exec pod install
     - name: Run tests
-      run: swift test -v
+      run: bundle exec fastlane tests

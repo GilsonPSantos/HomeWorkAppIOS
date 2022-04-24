@@ -1,6 +1,10 @@
 import UIKit
 
 open class ViewController: UIViewController {
+    deinit {
+        printDeinitInfo(of: self)
+    }
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,5 +41,14 @@ open class ViewController: UIViewController {
 
     private func getNavigation() -> NavigationController? {
         return navigationController as? NavigationController
+    }
+}
+
+extension UIViewController {
+    func printDeinitInfo(of object: Any) {
+        #if APPSTORE
+        #else
+        print("-- GPS Deinit \(object) --")
+        #endif
     }
 }

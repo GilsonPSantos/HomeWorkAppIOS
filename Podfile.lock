@@ -31,12 +31,14 @@ PODS:
     - GPSCoreFeatureInterface/CoordinatorInterface
     - GPSCoreFeatureInterface/ModuleInterface
     - GPSExtensions
+    - GPSUI
     - PromiseKit
   - GPSTabBar/Tests (1.0.0):
     - Cartography
     - GPSCoreFeatureInterface/CoordinatorInterface
     - GPSCoreFeatureInterface/ModuleInterface
     - GPSExtensions
+    - GPSUI
     - PromiseKit
   - GPSUI (1.0.0):
     - GPSExtensions
@@ -99,7 +101,7 @@ SPEC CHECKSUMS:
   GPSCoreFeatureInterface: e26a13ae14a2f96f9577faf50f80fad87c9eb20a
   GPSExtensions: 7d4b781b1c113e00ff2949aa899aa945d063df43
   GPSHome: a25421f1ab334c98e5c7c10d650ef25c9391f6d9
-  GPSTabBar: 708152747691339febe97ebac8c266aa623c393e
+  GPSTabBar: ad7a0f361b5d659b644aeac3f81708891eb95896
   GPSUI: 5d6a12e03ad70b5c96dea10a71aad3673195618a
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee

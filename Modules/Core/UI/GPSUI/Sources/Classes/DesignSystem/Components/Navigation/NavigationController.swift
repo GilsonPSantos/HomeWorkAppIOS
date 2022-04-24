@@ -10,15 +10,13 @@ public enum ButtonItemPosition {
 }
 
 public class NavigationController: UINavigationController {
+    deinit {
+        printDeinitInfo(of: self)
+    }
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationColor()
         setupAppearance()
-    }
-
-    private func setupNavigationColor() {
-        self.navigationBar.titleTextAttributes = [.foregroundColor: DesignSystemApp.shared.designSystem.navigation.tintColor]
     }
 
     private func setupAppearance() {
@@ -26,6 +24,7 @@ public class NavigationController: UINavigationController {
         appearance.configureWithTransparentBackground()
         appearance.shadowImage = UIImage()
         appearance.backgroundColor = DesignSystemApp.shared.designSystem.navigation.backgroundColor
+        appearance.titleTextAttributes = [.foregroundColor: DesignSystemApp.shared.designSystem.navigation.tintColor]
         navigationBar.standardAppearance = appearance
         navigationBar.compactAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance

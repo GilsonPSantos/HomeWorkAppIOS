@@ -1,4 +1,5 @@
 import Cartography
+import UIKit
 import GPSUI
 
 class HomeCell: UITableViewCell {
@@ -48,10 +49,10 @@ class HomeCell: UITableViewCell {
     private func setupContainerView() {
         contentView.addSubview(containerView)
         constrain(containerView, contentView) { view, superView in
-            view.leading == superView.leading + 16
-            view.trailing == superView.trailing - 16
-            view.top == superView.top + 10
-            view.bottom == superView.bottom - 10
+            view.leading == superView.leading + Style.margins.regular
+            view.trailing == superView.trailing - Style.margins.regular
+            view.top == superView.top + Style.margins.small
+            view.bottom == superView.bottom - Style.margins.small
         }
         setupLineView()
         setupTitleLabel()
@@ -69,8 +70,8 @@ class HomeCell: UITableViewCell {
 
     private func setupTitleLabel() {
         containerView.addSubview(titleLabel)
-        constrain(titleLabel, lineView, containerView) { view, left, superView in
-            view.leading == left.trailing + 16
+        constrain(titleLabel, lineView, containerView) { view, leftview, superView in
+            view.leading == leftview.trailing + Style.margins.regular
             view.trailing == superView.trailing
             view.top >= superView.top
             view.centerY == superView.centerY

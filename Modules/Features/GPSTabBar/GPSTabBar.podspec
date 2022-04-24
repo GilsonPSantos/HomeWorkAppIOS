@@ -21,6 +21,7 @@ TODO: Add long description of the pod here.
 
   s.frameworks = 'UIKit'
 
+  s.dependency 'GPSUI'
   s.dependency 'Cartography'
   s.dependency 'PromiseKit'
   s.dependency 'GPSCoreFeatureInterface/CoordinatorInterface'

@@ -20,4 +20,3 @@ public struct DesignSystem: Decodable {
         self.secondaryButton = try container.decode(ButtonUI.self, forKey: .secondaryButton)
     }
 }
-

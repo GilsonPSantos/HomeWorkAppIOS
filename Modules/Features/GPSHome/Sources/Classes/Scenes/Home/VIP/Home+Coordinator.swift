@@ -1,5 +1,6 @@
 import UIKit
 import GPSCoreFeatureInterface
+import GPSUI
 
 protocol HomeCoordinatorProtocol: MainCoordinatorProtocol {}
 
@@ -39,7 +40,7 @@ extension Home {
             view.setup(delegate: viewController)
             presenter.viewController = viewController
 
-            return UINavigationController(rootViewController: viewController)
+            return NavigationController(rootViewController: viewController)
         }
     }
 }

@@ -11,7 +11,7 @@ TODO: Add long description of the pod here.
   s.authors          = { 'GilsonSantos' => 'gilsonsantosti@gmail.com'}
   s.source           = { :git => 'https://github.com/GilsonPSantos/template-module.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '14.5'
 
   s.subspec 'CoordinatorInterface' do |coordinatorInterface|
     coordinatorInterface.source_files = 'Coordinator/Sources/**/*'

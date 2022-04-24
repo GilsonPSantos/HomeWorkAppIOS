@@ -50,6 +50,14 @@ extension Home.ViewController: HomeViewDelegate {
         let cell = tableView.dequeue(cell: HomeCell.self) ?? UITableViewCell()
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+    }
 }
 
-extension Home.ViewController: HomePresenterDelegate {}
+extension Home.ViewController: HomePresenterDelegate {
+    func render() {
+        customView.render()
+    }
+}

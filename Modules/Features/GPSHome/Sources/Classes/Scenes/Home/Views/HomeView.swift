@@ -3,6 +3,7 @@ import GPSUI
 
 protocol HomeViewProtocol where Self: UIView {
     func setup(delegate: HomeViewDelegate)
+    func render()
 }
 
 typealias HomeViewDelegate = UITableViewDataSource & UITableViewDelegate
@@ -53,5 +54,9 @@ final class HomeView: UIView, HomeViewProtocol {
     func setup(delegate: HomeViewDelegate) {
         self.tableView.delegate = delegate
         self.tableView.dataSource = delegate
+    }
+
+    func render() {
+        tableView.reloadData()
     }
 }

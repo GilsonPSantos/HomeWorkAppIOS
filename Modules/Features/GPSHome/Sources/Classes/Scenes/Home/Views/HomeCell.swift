@@ -52,7 +52,6 @@ class HomeCell: UITableViewCell {
             view.trailing == superView.trailing - 16
             view.top == superView.top + 10
             view.bottom == superView.bottom - 10
-            view.height == 70
         }
         setupLineView()
         setupTitleLabel()

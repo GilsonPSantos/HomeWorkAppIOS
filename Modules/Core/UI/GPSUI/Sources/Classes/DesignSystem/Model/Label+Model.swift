@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 public struct LabelUI: Decodable {
     private enum CodingKeys: String, CodingKey {

@@ -1,7 +1,11 @@
 {
+    "backgroundColor": "F1F1F1",
     "navigation": {
         "backgroundColor": "8E5AF7",
         "tintColor": "FFFFFF"
+    },
+    "labelTitle": {
+        "textColor": "8E5AF7",
     },
     "primaryButton": {
         "backgroundColor": "8E5AF7",

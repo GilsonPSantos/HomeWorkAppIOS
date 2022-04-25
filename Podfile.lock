@@ -1,4 +1,5 @@
 PODS:
+  - Cartography (4.0.0)
   - GPSCoreFeature (1.0.0):
     - GPSCoreFeatureInterface
   - GPSCoreFeature/Tests (1.0.0):
@@ -11,19 +12,72 @@ PODS:
   - GPSCoreFeatureInterface/ModuleInterface (1.0.0)
   - GPSCoreFeatureInterface/TabbarInterface (1.0.0)
   - GPSExtensions (1.0.0)
+  - GPSHome (1.0.0):
+    - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
+    - GPSExtensions
+    - GPSUI
+    - PromiseKit
+  - GPSHome/Tests (1.0.0):
+    - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
+    - GPSExtensions
+    - GPSUI
+    - PromiseKit
+  - GPSTabBar (1.0.0):
+    - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
+    - GPSExtensions
+    - GPSUI
+    - PromiseKit
+  - GPSTabBar/Tests (1.0.0):
+    - Cartography
+    - GPSCoreFeatureInterface/CoordinatorInterface
+    - GPSCoreFeatureInterface/ModuleInterface
+    - GPSExtensions
+    - GPSUI
+    - PromiseKit
+  - GPSUI (1.0.0):
+    - GPSExtensions
+  - Kingfisher (5.7.0)
+  - lottie-ios (3.1.5)
+  - PromiseKit (6.15.3):
+    - PromiseKit/CorePromise (= 6.15.3)
+    - PromiseKit/Foundation (= 6.15.3)
+    - PromiseKit/UIKit (= 6.15.3)
+  - PromiseKit/CorePromise (6.15.3)
+  - PromiseKit/Foundation (6.15.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.15.3):
+    - PromiseKit/CorePromise
   - SwiftGen (6.4.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
+  - Cartography
   - GPSCoreFeature (from `Modules/Core/CoreFeature/GPSCoreFeature`)
   - GPSCoreFeature/Tests (from `Modules/Core/CoreFeature/GPSCoreFeature`)
   - GPSCoreFeatureInterface (from `Modules/Core/CoreFeature/GPSCoreFeatureInterface`)
   - GPSExtensions (from `Modules/Services/GPSExtensions`)
-  - SwiftGen (~> 6.0)
+  - GPSHome (from `Modules/Features/GPSHome`)
+  - GPSHome/Tests (from `Modules/Features/GPSHome`)
+  - GPSTabBar (from `Modules/Features/GPSTabBar`)
+  - GPSTabBar/Tests (from `Modules/Features/GPSTabBar`)
+  - GPSUI (from `Modules/Core/UI/GPSUI`)
+  - Kingfisher (= 5.7.0)
+  - lottie-ios (= 3.1.5)
+  - SwiftGen (= 6.4.0)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - Cartography
+    - Kingfisher
+    - lottie-ios
+    - PromiseKit
     - SwiftGen
     - SwiftLint
 
@@ -34,14 +88,27 @@ EXTERNAL SOURCES:
     :path: Modules/Core/CoreFeature/GPSCoreFeatureInterface
   GPSExtensions:
     :path: Modules/Services/GPSExtensions
+  GPSHome:
+    :path: Modules/Features/GPSHome
+  GPSTabBar:
+    :path: Modules/Features/GPSTabBar
+  GPSUI:
+    :path: Modules/Core/UI/GPSUI
 
 SPEC CHECKSUMS:
-  GPSCoreFeature: 50f4c948883b6b4372e6496955fe33f3ab8f1396
-  GPSCoreFeatureInterface: b559e75f6bb8afdc91f3f1e9d4ed25a6d1a6a735
-  GPSExtensions: d9109e283000c5809846466b78294e76e5b0cbf9
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  GPSCoreFeature: e1d0fff8601355ac73d498953d88ac0f2eb7b5da
+  GPSCoreFeatureInterface: 141e4cf28eb2de3e162d19eb3132fa82bb36a765
+  GPSExtensions: 4670135b872bb4f9dcaa3991e38acddf8e103eec
+  GPSHome: 75967bb13f065c623ec30c8ca319a9d6273971c3
+  GPSTabBar: 39ea2e8c4f6e80062088d31b4d4a7f576efc10cb
+  GPSUI: a723693a1f038391a5290a03916c644c460c440a
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 046fc354298126dfb6f82311f5bfd097d8f29668
+PODFILE CHECKSUM: e986d8ec77867390260ae06a325a2c61bb677a97
 
 COCOAPODS: 1.10.0

@@ -1,5 +1,6 @@
-import UIKit
 import Cartography
+import UIKit
+import GPSUI
 
 class HomeCell: UITableViewCell {
     private let containerView: UIView = {
@@ -7,7 +8,7 @@ class HomeCell: UITableViewCell {
         view.addBoarder()
         view.addCornerRadius()
         view.addShadow()
-        view.backgroundColor = .white
+        view.backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         return view
     }()
 
@@ -16,7 +17,7 @@ class HomeCell: UITableViewCell {
         view.clipsToBounds = true
         view.layer.cornerRadius = 8
         view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
-        view.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        view.backgroundColor = DesignSystemApp.shared.designSystem.labelTitle.textColor
 
         return view
     }()
@@ -24,7 +25,7 @@ class HomeCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        label.textColor = DesignSystemApp.shared.designSystem.labelTitle.textColor
         label.textAlignment = .left
         label.text = "Grupo da familia"
         return label
@@ -40,7 +41,7 @@ class HomeCell: UITableViewCell {
     }
 
     private func setup() {
-        backgroundColor = .white
+        backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         selectionStyle = .none
         setupContainerView()
     }
@@ -48,11 +49,10 @@ class HomeCell: UITableViewCell {
     private func setupContainerView() {
         contentView.addSubview(containerView)
         constrain(containerView, contentView) { view, superView in
-            view.leading == superView.leading + 16
-            view.trailing == superView.trailing - 16
-            view.top == superView.top + 10
-            view.bottom == superView.bottom - 10
-            view.height == 70
+            view.leading == superView.leading + Style.margins.regular
+            view.trailing == superView.trailing - Style.margins.regular
+            view.top == superView.top + Style.margins.small
+            view.bottom == superView.bottom - Style.margins.small
         }
         setupLineView()
         setupTitleLabel()
@@ -70,8 +70,8 @@ class HomeCell: UITableViewCell {
 
     private func setupTitleLabel() {
         containerView.addSubview(titleLabel)
-        constrain(titleLabel, lineView, containerView) { view, left, superView in
-            view.leading == left.trailing + 16
+        constrain(titleLabel, lineView, containerView) { view, leftview, superView in
+            view.leading == leftview.trailing + Style.margins.regular
             view.trailing == superView.trailing
             view.top >= superView.top
             view.centerY == superView.centerY

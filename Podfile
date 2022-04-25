@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '14.5'
+platform :ios, '13.0'
 
 # plugin 'cocoapods-keys', {
 #   :project => "HomeWorkApp",
@@ -64,11 +64,6 @@ target 'HomeWorkApp' do
     inherit! :search_paths
     features_testspec
     core_feature_testspec
-
-  end
-
-  target 'HomeWorkAppUITests' do
-    inherit! :search_paths
 
   end
 end

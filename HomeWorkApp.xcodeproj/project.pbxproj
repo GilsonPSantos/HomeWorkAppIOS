@@ -11,26 +11,17 @@
 		448A77862689F27200B63773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448A77852689F27200B63773 /* Assets.xcassets */; };
 		448A77892689F27200B63773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448A77872689F27200B63773 /* LaunchScreen.storyboard */; };
 		448A77942689F27200B63773 /* HomeWorkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A77932689F27200B63773 /* HomeWorkAppTests.swift */; };
-		448A779F2689F27200B63773 /* HomeWorkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A779E2689F27200B63773 /* HomeWorkAppUITests.swift */; };
 		448A77F3268A2F6700B63773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448A77F2268A2F6700B63773 /* Localizable.strings */; };
 		44A949AA26F92CA3000AD09C /* TabBarFeatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949A926F92CA3000AD09C /* TabBarFeatureBuilder.swift */; };
 		44A949AC26F92DEB000AD09C /* FeatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949AB26F92DEB000AD09C /* FeatureBuilder.swift */; };
 		44A949AE26F92EF8000AD09C /* HomeFeatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949AD26F92EF8000AD09C /* HomeFeatureBuilder.swift */; };
 		44A949B126F93130000AD09C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949B026F93130000AD09C /* AppConfiguration.swift */; };
 		C21CEEB25A6E20848DCE09F4 /* Pods_HomeWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDD62D84F9B3DDABDF85B87 /* Pods_HomeWorkApp.framework */; };
-		C2801600B091222783984B6B /* Pods_HomeWorkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610440AF0044F153FEFFBDDB /* Pods_HomeWorkAppUITests.framework */; };
 		EBB44C55E36070B1CAEDA37C /* Pods_HomeWorkAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6689D23CCC720E76A41D4D32 /* Pods_HomeWorkAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		448A77902689F27200B63773 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 448A77712689F26F00B63773 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 448A77782689F26F00B63773;
-			remoteInfo = HomeWorkApp;
-		};
-		448A779B2689F27200B63773 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 448A77712689F26F00B63773 /* Project object */;
 			proxyType = 1;
@@ -50,7 +41,6 @@
 		448A778F2689F27200B63773 /* HomeWorkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A77932689F27200B63773 /* HomeWorkAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkAppTests.swift; sourceTree = "<group>"; };
 		448A77952689F27200B63773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		448A779A2689F27200B63773 /* HomeWorkAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorkAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A779E2689F27200B63773 /* HomeWorkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkAppUITests.swift; sourceTree = "<group>"; };
 		448A77A02689F27200B63773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448A77F2268A2F6700B63773 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -87,14 +77,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		448A77972689F27200B63773 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2801600B091222783984B6B /* Pods_HomeWorkAppUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,7 +97,6 @@
 			children = (
 				448A77792689F26F00B63773 /* HomeWorkApp.app */,
 				448A778F2689F27200B63773 /* HomeWorkAppTests.xctest */,
-				448A779A2689F27200B63773 /* HomeWorkAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,25 +260,6 @@
 			productReference = 448A778F2689F27200B63773 /* HomeWorkAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		448A77992689F27200B63773 /* HomeWorkAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 448A77A92689F27200B63773 /* Build configuration list for PBXNativeTarget "HomeWorkAppUITests" */;
-			buildPhases = (
-				8BEBE59E32F09F50E9395870 /* [CP] Check Pods Manifest.lock */,
-				448A77962689F27200B63773 /* Sources */,
-				448A77972689F27200B63773 /* Frameworks */,
-				448A77982689F27200B63773 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				448A779C2689F27200B63773 /* PBXTargetDependency */,
-			);
-			name = HomeWorkAppUITests;
-			productName = HomeWorkAppUITests;
-			productReference = 448A779A2689F27200B63773 /* HomeWorkAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,10 +273,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					448A778E2689F27200B63773 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 448A77782689F26F00B63773;
-					};
-					448A77992689F27200B63773 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 448A77782689F26F00B63773;
 					};
@@ -335,7 +293,6 @@
 			targets = (
 				448A77782689F26F00B63773 /* HomeWorkApp */,
 				448A778E2689F27200B63773 /* HomeWorkAppTests */,
-				448A77992689F27200B63773 /* HomeWorkAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,13 +309,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		448A778D2689F27200B63773 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		448A77982689F27200B63773 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,28 +357,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftGen/bin/swiftgen\n${PODS_ROOT}/SwiftLint/swiftlint\n";
-		};
-		8BEBE59E32F09F50E9395870 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HomeWorkAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		BACFF249D2B96B1CFF9105A3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -509,14 +437,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		448A77962689F27200B63773 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				448A779F2689F27200B63773 /* HomeWorkAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -524,11 +444,6 @@
 			isa = PBXTargetDependency;
 			target = 448A77782689F26F00B63773 /* HomeWorkApp */;
 			targetProxy = 448A77902689F27200B63773 /* PBXContainerItemProxy */;
-		};
-		448A779C2689F27200B63773 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 448A77782689F26F00B63773 /* HomeWorkApp */;
-			targetProxy = 448A779B2689F27200B63773 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -650,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -676,7 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.homeworkapp.HomeWorkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -696,7 +611,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.homeworkapp.HomeWorkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -741,46 +656,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeWorkApp.app/HomeWorkApp";
-			};
-			name = Release;
-		};
-		448A77AA2689F27200B63773 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA262118F01DE3E59EF697E7 /* Pods-HomeWorkAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HomeWorkAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.homeworkapp.HomeWorkAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HomeWorkApp;
-			};
-			name = Debug;
-		};
-		448A77AB2689F27200B63773 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB5B134D73F824BA6DF36ACE /* Pods-HomeWorkAppUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HomeWorkAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.homeworkapp.HomeWorkAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HomeWorkApp;
 			};
 			name = Release;
 		};
@@ -835,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -861,7 +736,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.homeworkapp.HomeWorkApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Mock;
 		};
@@ -884,26 +759,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeWorkApp.app/HomeWorkApp";
-			};
-			name = Mock;
-		};
-		448A77EC268A2B5400B63773 /* Mock */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF97308EC0324CAB6DC690C1 /* Pods-HomeWorkAppUITests.mock.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HomeWorkAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.homeworkapp.HomeWorkAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HomeWorkApp;
 			};
 			name = Mock;
 		};
@@ -936,16 +791,6 @@
 				448A77A72689F27200B63773 /* Debug */,
 				448A77EB268A2B5400B63773 /* Mock */,
 				448A77A82689F27200B63773 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		448A77A92689F27200B63773 /* Build configuration list for PBXNativeTarget "HomeWorkAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				448A77AA2689F27200B63773 /* Debug */,
-				448A77EC268A2B5400B63773 /* Mock */,
-				448A77AB2689F27200B63773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

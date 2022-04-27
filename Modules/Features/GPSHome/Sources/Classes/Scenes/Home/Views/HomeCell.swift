@@ -31,22 +31,26 @@ class HomeCell: UITableViewCell {
         return label
     }()
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
+    {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
     }
 
-    required init?(coder: NSCoder) {
+    required init?(coder: NSCoder)
+    {
         fatalError()
     }
 
-    private func setup() {
+    private func setup()
+    {
         backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         selectionStyle = .none
         setupContainerView()
     }
 
-    private func setupContainerView() {
+    private func setupContainerView()
+    {
         contentView.addSubview(containerView)
         constrain(containerView, contentView) { view, superView in
             view.leading == superView.leading + Style.margins.regular
@@ -58,7 +62,8 @@ class HomeCell: UITableViewCell {
         setupTitleLabel()
     }
 
-    private func setupLineView() {
+    private func setupLineView()
+    {
         containerView.addSubview(lineView)
         constrain(lineView, containerView) { view, superView in
             view.leading == superView.leading
@@ -68,7 +73,8 @@ class HomeCell: UITableViewCell {
         }
     }
 
-    private func setupTitleLabel() {
+    private func setupTitleLabel()
+    {
         containerView.addSubview(titleLabel)
         constrain(titleLabel, lineView, containerView) { view, leftview, superView in
             view.leading == leftview.trailing + Style.margins.regular

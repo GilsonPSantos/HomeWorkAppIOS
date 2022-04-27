@@ -16,48 +16,57 @@ extension Home {
             super.init(nibName: nil, bundle: nil)
         }
 
-        required init?(coder aDecoder: NSCoder) {
+        required init?(coder aDecoder: NSCoder)
+        {
             fatalError()
         }
 
-        override func loadView() {
+        override func loadView()
+        {
             view = customView
         }
 
-        override func viewDidLoad() {
+        override func viewDidLoad()
+        {
             super.viewDidLoad()
             setupButtonNavigation()
             setTitle(title: "Meus Grupos")
             interactor.fetchData()
         }
 
-        private func setupButtonNavigation() {
+        private func setupButtonNavigation()
+        {
             addNavigationButton(type: .add, target: #selector(addGroup), position: .right)
         }
 
-        @objc private func addGroup() {
+        @objc private func addGroup()
+        {
             interactor.createGroup()
         }
     }
 }
 
 extension Home.ViewController: HomeViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return 4
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeue(cell: HomeCell.self) ?? UITableViewCell()
         return cell
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
         print(indexPath)
     }
 }
 
 extension Home.ViewController: HomePresenterDelegate {
-    func render() {
+    func render()
+    {
         customView.render()
     }
 }

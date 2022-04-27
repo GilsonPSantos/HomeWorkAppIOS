@@ -9,11 +9,13 @@ protocol HomeViewProtocol where Self: UIView {
 typealias HomeViewDelegate = UITableViewDataSource & UITableViewDelegate
 
 final class HomeView: UIView, HomeViewProtocol {
-    static func make() -> HomeViewProtocol {
+    static func make() -> HomeViewProtocol
+    {
         return HomeView(tableView: tableView())
     }
 
-    private static func tableView() -> UITableView {
+    private static func tableView() -> UITableView
+    {
         let tableView = UITableView(frame: .zero)
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
@@ -35,28 +37,33 @@ final class HomeView: UIView, HomeViewProtocol {
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder)
+    {
         fatalError()
     }
 
-    private func setup() {
+    private func setup()
+    {
         backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
         setupTableView()
     }
 
-    private func setupTableView() {
+    private func setupTableView()
+    {
         addSubview(tableView)
         constrain(tableView, self) { view, superView in
             view.edges == superView.safeAreaLayoutGuide.edges
         }
     }
 
-    func setup(delegate: HomeViewDelegate) {
+    func setup(delegate: HomeViewDelegate)
+    {
         self.tableView.delegate = delegate
         self.tableView.dataSource = delegate
     }
 
-    func render() {
+    func render()
+    {
         tableView.reloadData()
     }
 }

@@ -6,6 +6,5 @@ protocol FeatureBuilderProtocol {
 }
 
 final class FeatureBuilder {
-    lazy var tabBar = TabBarFeatureBuilder(featureItens: [home])
     lazy var home = HomeFeatureBuilder()
 }

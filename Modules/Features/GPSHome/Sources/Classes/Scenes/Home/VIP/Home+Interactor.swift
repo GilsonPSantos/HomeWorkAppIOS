@@ -20,11 +20,13 @@ extension Home {
             self.dataProvider = dataProvider
         }
 
-        func fetchData() {
+        func fetchData()
+        {
             presenter.present()
         }
 
-        func createGroup() {
+        func createGroup()
+        {
             print("createGroup called")
         }
     }

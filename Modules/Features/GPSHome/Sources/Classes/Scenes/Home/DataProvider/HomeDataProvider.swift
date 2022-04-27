@@ -7,7 +7,8 @@ protocol HomeDataProviderProtocol {
 
 extension Home {
     final class DataProvider: HomeDataProviderProtocol {
-        func fetchMySceneData() -> Promise<Home.Response> {
+        func fetchMySceneData() -> Promise<Home.Response>
+        {
             return Promise.value(Home.Response())
         }
     }

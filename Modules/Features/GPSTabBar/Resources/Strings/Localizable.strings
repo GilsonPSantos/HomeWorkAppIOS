@@ -1,9 +1,0 @@
-// TABBAR HOME
-
-"TabBar.Item.Home.Title" = "Home";
-"TabBar.Item.Home.ImageName" = "house";
-"TabBar.Item.Home.SelectedImageName" = "house.fill";
-
-"TabBar.Item.Favorite.Title" = "Favoritos";
-"TabBar.Item.Favorite.ImageName" = "star";
-"TabBar.Item.Favorite.SelectedImageName" = "star.fill";

@@ -4,13 +4,15 @@ import GPSCoreFeatureInterface
 public struct Module: ModuleProtocol {
     private let dependencies: Dependencies
 
-    public init(dependencies: Dependencies) {
+    public init(dependencies: Dependencies)
+    {
         self.dependencies = dependencies
     }
 
     public func createInitialScene(rootViewController: UIViewController?) {}
 
-    public func createCoordinator(rootViewController: UIViewController?) -> BaseCoordinatorProtocol {
+    public func createCoordinator(rootViewController: UIViewController?) -> CoordinatorProtocol
+    {
         Home.Coordinator(dependencies: dependencies)
     }
 }

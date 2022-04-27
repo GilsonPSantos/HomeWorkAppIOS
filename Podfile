@@ -21,7 +21,6 @@ def external_pods
 end
 
 def features
-  pod 'GPSTabBar', :path => $features_path + 'GPSTabBar'
   pod 'GPSHome', :path => $features_path + 'GPSHome'
 end
 
@@ -30,7 +29,6 @@ def core
 end
 
 def core_feature_interface
-  pod 'GPSCoreFeatureInterface', :path => $core_path + 'CoreFeature/GPSCoreFeatureInterface'
   pod 'GPSCoreFeatureInterface', :path => $core_path + 'CoreFeature/GPSCoreFeatureInterface'
 end
 
@@ -43,7 +41,6 @@ def service
 end
 
 def features_testspec
-  pod 'GPSTabBar', :path => $features_path + 'GPSTabBar', :testspecs => ['Tests']
   pod 'GPSHome', :path => $features_path + 'GPSHome', :testspecs => ['Tests']
 end
 

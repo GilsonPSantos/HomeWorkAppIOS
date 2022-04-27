@@ -12,7 +12,6 @@
 		448A77892689F27200B63773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448A77872689F27200B63773 /* LaunchScreen.storyboard */; };
 		448A77942689F27200B63773 /* HomeWorkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A77932689F27200B63773 /* HomeWorkAppTests.swift */; };
 		448A77F3268A2F6700B63773 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448A77F2268A2F6700B63773 /* Localizable.strings */; };
-		44A949AA26F92CA3000AD09C /* TabBarFeatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949A926F92CA3000AD09C /* TabBarFeatureBuilder.swift */; };
 		44A949AC26F92DEB000AD09C /* FeatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949AB26F92DEB000AD09C /* FeatureBuilder.swift */; };
 		44A949AE26F92EF8000AD09C /* HomeFeatureBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949AD26F92EF8000AD09C /* HomeFeatureBuilder.swift */; };
 		44A949B126F93130000AD09C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A949B026F93130000AD09C /* AppConfiguration.swift */; };
@@ -44,7 +43,6 @@
 		448A779E2689F27200B63773 /* HomeWorkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkAppUITests.swift; sourceTree = "<group>"; };
 		448A77A02689F27200B63773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448A77F2268A2F6700B63773 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		44A949A926F92CA3000AD09C /* TabBarFeatureBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFeatureBuilder.swift; sourceTree = "<group>"; };
 		44A949AB26F92DEB000AD09C /* FeatureBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureBuilder.swift; sourceTree = "<group>"; };
 		44A949AD26F92EF8000AD09C /* HomeFeatureBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeatureBuilder.swift; sourceTree = "<group>"; };
 		44A949B026F93130000AD09C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 			children = (
 				44A949AB26F92DEB000AD09C /* FeatureBuilder.swift */,
 				44A949AD26F92EF8000AD09C /* HomeFeatureBuilder.swift */,
-				44A949A926F92CA3000AD09C /* TabBarFeatureBuilder.swift */,
 			);
 			path = FeatureBuilder;
 			sourceTree = "<group>";
@@ -422,7 +419,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A949B126F93130000AD09C /* AppConfiguration.swift in Sources */,
-				44A949AA26F92CA3000AD09C /* TabBarFeatureBuilder.swift in Sources */,
 				44A949AE26F92EF8000AD09C /* HomeFeatureBuilder.swift in Sources */,
 				44A949AC26F92DEB000AD09C /* FeatureBuilder.swift in Sources */,
 				448A777D2689F26F00B63773 /* AppDelegate.swift in Sources */,

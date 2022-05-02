@@ -22,6 +22,13 @@ class HomeCell: UITableViewCell {
         return view
     }()
 
+    private let statusImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = Style.SystemImageName.check.image(color: .green)
+        return imageView
+    }()
+
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
@@ -29,6 +36,13 @@ class HomeCell: UITableViewCell {
         label.textAlignment = .left
         label.text = "Grupo da familia"
         return label
+    }()
+
+    private let arrowImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = Style.SystemImageName.arrow.image(color: DesignSystemApp.shared.designSystem.labelTitle.textColor)
+        return imageView
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
@@ -59,7 +73,9 @@ class HomeCell: UITableViewCell {
             view.bottom == superView.bottom - Style.margins.small
         }
         setupLineView()
+        setupImageView()
         setupTitleLabel()
+        setupArrowImage()
     }
 
     private func setupLineView()
@@ -73,14 +89,39 @@ class HomeCell: UITableViewCell {
         }
     }
 
+    private func setupImageView()
+    {
+        containerView.addSubview(statusImage)
+        constrain(statusImage, lineView, containerView) { view, leftview, superview in
+            view.top >= superview.top + Style.margins.small
+            view.leading == leftview.trailing + Style.margins.small
+            view.centerY == superview.centerY
+            view.bottom <= superview.bottom - Style.margins.small
+            view.width == 48
+            view.height == 40
+        }
+    }
+
     private func setupTitleLabel()
     {
         containerView.addSubview(titleLabel)
-        constrain(titleLabel, lineView, containerView) { view, leftview, superView in
+        constrain(titleLabel, statusImage, containerView) { view, leftview, superView in
             view.leading == leftview.trailing + Style.margins.regular
-            view.trailing == superView.trailing
-            view.top >= superView.top
+            view.top >= superView.top + Style.margins.small
+            view.bottom <= superView.bottom - Style.margins.small
             view.centerY == superView.centerY
+        }
+    }
+
+    private func setupArrowImage()
+    {
+        containerView.addSubview(arrowImage)
+        constrain(arrowImage, titleLabel, containerView) { view, leftview, superview in
+            view.leading == leftview.trailing + Style.margins.small
+            view.trailing == superview.trailing - Style.margins.verySmall
+            view.centerY == superview.centerY
+            view.width == 20
+            view.height == 20
         }
     }
 }

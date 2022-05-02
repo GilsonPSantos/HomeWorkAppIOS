@@ -4,7 +4,7 @@ open class ViewController: UIViewController {
     deinit {
         printDeinitInfo(of: self)
     }
-    
+
     override open func viewDidLoad() {
         super.viewDidLoad()
     }

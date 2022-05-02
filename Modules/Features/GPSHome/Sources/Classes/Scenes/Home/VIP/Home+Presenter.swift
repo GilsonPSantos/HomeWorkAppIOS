@@ -1,4 +1,5 @@
 import UIKit
+import GPSUI
 
 protocol HomePresenterProtocol {
     func present()
@@ -21,9 +22,29 @@ extension Home {
         {
             [
                 .init(title: "Grupo da Familia",
-                      percentageCompletedValue: 80.0,
-                      percentagelabel: "80%")
+                      percentageCompletedValue: 90.0,
+                      percentagelabel: "90%",
+                      percentageColor: color(with: 90.0)),
+                .init(title: "Grupo da Familia",
+                      percentageCompletedValue: 40.0,
+                      percentagelabel: "40%",
+                      percentageColor: color(with: 40.0)),
+                .init(title: "Grupo da Familia",
+                      percentageCompletedValue: 60.0,
+                      percentagelabel: "60%",
+                      percentageColor: color(with: 60.0))
             ]
+        }
+
+        private func color(with value: CGFloat) -> UIColor
+        {
+            if value >= 80.0 {
+                return Style.Color.success.rawValue.hexStringToUIColor()
+            } else if value <= 50.0 {
+                return Style.Color.error.rawValue.hexStringToUIColor()
+            } else {
+                return Style.Color.warning.rawValue.hexStringToUIColor()
+            }
         }
     }
 }

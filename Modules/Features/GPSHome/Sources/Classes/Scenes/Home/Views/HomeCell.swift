@@ -25,7 +25,7 @@ class HomeCell: UITableViewCell {
 
     private let containerProgressView: UIView = {
         let view = UIView()
-        view.backgroundColor = DesignSystemApp.shared.designSystem.labelTitle.textColor.withAlphaComponent(0.4)
+        view.backgroundColor = .clear
         view.addCornerRadius(radius: 24)
         return view
     }()
@@ -163,7 +163,7 @@ class HomeCell: UITableViewCell {
     func setup(viewModel: Home.ViewModel)
     {
         titleLabel.text = viewModel.title
-        progressView.progressColor = viewModel.percentageCompletedValue > 80 ? .green : .red
+        progressView.progressColor = viewModel.percentageColor
         progressView.progressValue = viewModel.percentageCompletedValue
         labelProgress.text = viewModel.percentagelabel
     }

@@ -1,7 +1,8 @@
 import UIKit
 
 public class ProgressCircleView: UIView, ProgressViewProtocol {
-    private lazy var progressLayer = CAShapeLayer()
+    private lazy var progressLayerMainValue = CAShapeLayer()
+    private lazy var progressLayerSecondaryValue = CAShapeLayer()
     private let ringWidth: CGFloat
     public var progressColor: UIColor = .red {
         didSet {
@@ -43,20 +44,41 @@ public class ProgressCircleView: UIView, ProgressViewProtocol {
 
     private func setupLayers()
     {
-        progressLayer.lineWidth = ringWidth
-        progressLayer.fillColor = nil
         backgroundColor = .clear
-        layer.addSublayer(progressLayer)
         layer.transform = CATransform3DMakeRotation(CGFloat(rotation), 0, 0, -1)
+        configureLayer(progressLayerMainValue)
+        configureLayer(progressLayerSecondaryValue)
+    }
+
+    private func configureLayer(_ layer: CAShapeLayer)
+    {
+        layer.lineWidth = ringWidth
+        layer.fillColor = nil
+        self.layer.addSublayer(layer)
     }
 
     private func setupDraw(_ rect: CGRect)
     {
         let circlePath = UIBezierPath(ovalIn: rect.insetBy(dx: ringWidth / 2, dy: ringWidth / 2))
-        progressLayer.path = circlePath.cgPath
-        progressLayer.lineCap = .round
-        progressLayer.strokeStart = 0
-        progressLayer.strokeEnd = progressValue / 100
-        progressLayer.strokeColor = progressColor.cgColor
+        progressLayerMainValue.path = circlePath.cgPath
+        progressLayerSecondaryValue.path = circlePath.cgPath
+        progressLayerMainValue.lineCap = .round
+        progressLayerSecondaryValue.lineCap = .round
+        setupLayerPrimaryLayer()
+        setupLayerSecondaryLayer()
+    }
+
+    private func setupLayerPrimaryLayer()
+    {
+        progressLayerMainValue.strokeStart = 0
+        progressLayerMainValue.strokeEnd = progressValue / 100
+        progressLayerMainValue.strokeColor = progressColor.cgColor
+    }
+
+    private func setupLayerSecondaryLayer()
+    {
+        progressLayerSecondaryValue.strokeStart = progressValue / 100
+        progressLayerSecondaryValue.strokeEnd = 1
+        progressLayerSecondaryValue.strokeColor = DesignSystemApp.shared.designSystem.labelTitle.textColor.cgColor
     }
 }

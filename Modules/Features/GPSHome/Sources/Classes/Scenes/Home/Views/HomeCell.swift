@@ -83,8 +83,8 @@ class HomeCell: UITableViewCell {
         constrain(containerView, contentView) { view, superView in
             view.leading == superView.leading + Style.margins.regular
             view.trailing == superView.trailing - Style.margins.regular
-            view.top == superView.top + Style.margins.small
-            view.bottom == superView.bottom - Style.margins.small
+            view.top == superView.top + Style.margins.verySmall
+            view.bottom == superView.bottom - Style.margins.verySmall
         }
         setupLineView()
         setupContainerProgress()

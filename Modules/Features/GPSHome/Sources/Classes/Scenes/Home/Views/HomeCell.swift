@@ -5,7 +5,8 @@ import GPSUI
 class HomeCell: UITableViewCell {
     private let containerView: UIView = {
         let view = UIView()
-        view.addBoarder()
+        view.addBoarder(widith: 0.2,
+                        color: DesignSystemApp.shared.designSystem.labelTitle.textColor.cgColor)
         view.addCornerRadius()
         view.addShadow()
         view.backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
@@ -22,11 +23,24 @@ class HomeCell: UITableViewCell {
         return view
     }()
 
-    private let statusImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = Style.SystemImageName.check.image(color: .green)
-        return imageView
+    private let containerProgressView: UIView = {
+        let view = UIView()
+        view.backgroundColor = DesignSystemApp.shared.designSystem.labelTitle.textColor.withAlphaComponent(0.4)
+        view.addCornerRadius(radius: 24)
+        return view
+    }()
+
+    private let progressView: ProgressViewProtocol = {
+        let progressView = ProgressCircleView()
+        return progressView
+    }()
+
+    private let labelProgress: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 1
+        label.textColor = DesignSystemApp.shared.designSystem.labelTitle.textColor
+        label.textAlignment = .center
+        return label
     }()
 
     private let titleLabel: UILabel = {
@@ -73,7 +87,7 @@ class HomeCell: UITableViewCell {
             view.bottom == superView.bottom - Style.margins.small
         }
         setupLineView()
-        setupImageView()
+        setupContainerProgress()
         setupTitleLabel()
         setupArrowImage()
     }
@@ -89,23 +103,44 @@ class HomeCell: UITableViewCell {
         }
     }
 
-    private func setupImageView()
+    private func setupContainerProgress()
     {
-        containerView.addSubview(statusImage)
-        constrain(statusImage, lineView, containerView) { view, leftview, superview in
+        containerView.addSubview(containerProgressView)
+        constrain(containerProgressView, lineView, containerView) { view, leftview, superview in
             view.top >= superview.top + Style.margins.small
             view.leading == leftview.trailing + Style.margins.small
             view.centerY == superview.centerY
             view.bottom <= superview.bottom - Style.margins.small
             view.width == 48
-            view.height == 40
+            view.height == 48
         }
+        setupLabelProgress()
+        setupProgressView()
+    }
+
+    private func setupLabelProgress()
+    {
+        containerProgressView.addSubview(labelProgress)
+        constrain(labelProgress, containerProgressView) { label, superview in
+            label.center == superview.center
+        }
+    }
+
+    private func setupProgressView()
+    {
+        containerProgressView.addSubview(progressView)
+        constrain(progressView as UIView, containerProgressView) { view, superview in
+            view.edges == superview.edges
+        }
+
+        progressView.progressValue = 80.0
+        progressView.progressColor = .green
     }
 
     private func setupTitleLabel()
     {
         containerView.addSubview(titleLabel)
-        constrain(titleLabel, statusImage, containerView) { view, leftview, superView in
+        constrain(titleLabel, containerProgressView, containerView) { view, leftview, superView in
             view.leading == leftview.trailing + Style.margins.regular
             view.top >= superView.top + Style.margins.small
             view.bottom <= superView.bottom - Style.margins.small
@@ -123,5 +158,13 @@ class HomeCell: UITableViewCell {
             view.width == 20
             view.height == 20
         }
+    }
+
+    func setup(viewModel: Home.ViewModel)
+    {
+        titleLabel.text = viewModel.title
+        progressView.progressColor = viewModel.percentageCompletedValue > 80 ? .green : .red
+        progressView.progressValue = viewModel.percentageCompletedValue
+        labelProgress.text = viewModel.percentagelabel
     }
 }

@@ -1,25 +1,23 @@
 import UIKit
 
-public protocol ProgressViewProtocol: UIView {
-    var progressValue: CGFloat { get set }
-}
-
 public class ProgressCircleView: UIView, ProgressViewProtocol {
     private lazy var progressLayer = CAShapeLayer()
     private let ringWidth: CGFloat
-    private let progressColor: UIColor
+    public var progressColor: UIColor = .red {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     public var progressValue: CGFloat = 0 {
         didSet {
             setNeedsDisplay()
         }
     }
-    private let rotation = 90 * Double.pi / 180
+    private let rotation = -(90 * Double.pi / 180)
 
-    public init(ringWidth: CGFloat = 2.5,
-                progressColor: UIColor = .white)
+    public init(ringWidth: CGFloat = 3.5)
     {
         self.ringWidth = ringWidth
-        self.progressColor = progressColor
         super.init(frame: .zero)
         setupLayers()
     }
@@ -27,7 +25,6 @@ public class ProgressCircleView: UIView, ProgressViewProtocol {
     override init(frame: CGRect)
     {
         self.ringWidth = 2.5
-        self.progressColor = .white
         super.init(frame: frame)
         setupLayers()
     }
@@ -35,7 +32,6 @@ public class ProgressCircleView: UIView, ProgressViewProtocol {
     required init?(coder: NSCoder)
     {
         self.ringWidth = 2.5
-        self.progressColor = .white
         super.init(coder: coder)
         setupLayers()
     }
@@ -60,7 +56,7 @@ public class ProgressCircleView: UIView, ProgressViewProtocol {
         progressLayer.path = circlePath.cgPath
         progressLayer.lineCap = .round
         progressLayer.strokeStart = 0
-        progressLayer.strokeEnd = progressValue
+        progressLayer.strokeEnd = progressValue / 100
         progressLayer.strokeColor = progressColor.cgColor
     }
 }

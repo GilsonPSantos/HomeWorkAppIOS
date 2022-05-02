@@ -5,6 +5,7 @@ extension Home {
         private let interactor: HomeInteractorProtocol
         private let customView: HomeViewProtocol
         private let coordinator: HomeCoordinatorProtocol
+        private var viewModel: [Home.ViewModel] = []
 
         init(interactor: HomeInteractorProtocol,
              customView: HomeViewProtocol,
@@ -49,12 +50,15 @@ extension Home {
 extension Home.ViewController: HomeViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 4
+        return viewModel.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeue(cell: HomeCell.self) ?? UITableViewCell()
+        guard let cell = tableView.dequeue(cell: HomeCell.self) else {
+            return UITableViewCell()
+        }
+        cell.setup(viewModel: viewModel[indexPath.row])
         return cell
     }
 
@@ -65,8 +69,9 @@ extension Home.ViewController: HomeViewDelegate {
 }
 
 extension Home.ViewController: HomePresenterDelegate {
-    func render()
+    func render(_ viewModel: [Home.ViewModel])
     {
-        customView.render()
+        self.viewModel = viewModel
+        customView.reloadData()
     }
 }

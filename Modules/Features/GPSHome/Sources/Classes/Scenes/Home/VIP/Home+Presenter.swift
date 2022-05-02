@@ -5,7 +5,7 @@ protocol HomePresenterProtocol {
 }
 
 protocol HomePresenterDelegate: AnyObject {
-    func render()
+    func render(_ viewModel: [Home.ViewModel])
 }
 
 extension Home {
@@ -14,7 +14,16 @@ extension Home {
 
         func present()
         {
-            viewController?.render()
+            viewController?.render(viewModel())
+        }
+
+        private func viewModel() -> [Home.ViewModel]
+        {
+            [
+                .init(title: "Grupo da Familia",
+                      percentageCompletedValue: 80.0,
+                      percentagelabel: "80%")
+            ]
         }
     }
 }

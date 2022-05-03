@@ -1,11 +1,11 @@
 {
     "backgroundColor": "F1F1F1",
     "navigation": {
-        "backgroundColor": "8E5AF7",
+        "backgroundColor": "0F5959",
         "tintColor": "FFFFFF"
     },
     "labelTitle": {
-        "textColor": "8E5AF7",
+        "textColor": "0F5959",
     },
     "primaryButton": {
         "backgroundColor": "8E5AF7",
@@ -13,7 +13,7 @@
         "disabledColor": "CDCDCD"
     },
     "secondaryButton": {
-        "backgroundColor": "8E5AF7",
+        "backgroundColor": "093A40",
         "textColor": "FFFFFF",
         "disabledColor": "CDCDCD"
     }

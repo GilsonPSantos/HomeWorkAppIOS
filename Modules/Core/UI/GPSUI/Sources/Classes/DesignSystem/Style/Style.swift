@@ -1,5 +1,5 @@
 import Foundation
 
 public struct Style {
-    public static var margins = Margin()
+    public static let margins = Margin()
 }

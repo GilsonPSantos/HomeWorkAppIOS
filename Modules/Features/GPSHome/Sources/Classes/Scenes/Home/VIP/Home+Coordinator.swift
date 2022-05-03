@@ -2,10 +2,11 @@ import UIKit
 import GPSCoreFeatureInterface
 import GPSUI
 
-protocol HomeCoordinatorProtocol: MainCoordinatorProtocol {}
+protocol HomeCoordinatorProtocol: CoordinatorProtocol {}
 
 extension Home {
     final class Coordinator: NSObject, HomeCoordinatorProtocol {
+        var identifier: String = FeatureIdentifier.home.rawValue
         private let dependencies: Dependencies
         var childCoordinators: [CoordinatorProtocol] = []
         var viewControllerType: UIViewController.Type = Home.ViewController.self
@@ -20,12 +21,14 @@ extension Home {
             self.rootViewController = rootViewController
         }
 
-        func start() {
+        func displayScene()
+        {
             let viewController = initialize()
             rootViewController = viewController
         }
 
-        func initialize() -> UIViewController {
+        func initialize() -> UIViewController
+        {
             let coordinator = self
             let presenter = Presenter()
             let dataStore = DataStore()

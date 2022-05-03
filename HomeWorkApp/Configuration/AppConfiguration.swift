@@ -8,14 +8,16 @@ protocol AppConfigurationProtocol {
 final class AppConfiguration: AppConfigurationProtocol {
     private let window: UIWindow?
     private let featureBuilder = FeatureBuilder()
-    private lazy var mainCoordinator = featureBuilder.tabBar.getFeature().createCoordinator(rootViewController: nil)
+    private lazy var mainCoordinator = featureBuilder.home.getFeature().createCoordinator(rootViewController: nil)
 
-    init(window: UIWindow?) {
+    init(window: UIWindow?)
+    {
         self.window = window
     }
 
-    func startInitialScene() {
-        mainCoordinator.start()
+    func startInitialScene()
+    {
+        mainCoordinator.displayScene()
         window?.rootViewController = mainCoordinator.rootViewController
         window?.makeKeyAndVisible()
     }

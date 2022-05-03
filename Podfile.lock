@@ -7,10 +7,8 @@ PODS:
   - GPSCoreFeatureInterface (1.0.0):
     - GPSCoreFeatureInterface/CoordinatorInterface (= 1.0.0)
     - GPSCoreFeatureInterface/ModuleInterface (= 1.0.0)
-    - GPSCoreFeatureInterface/TabbarInterface (= 1.0.0)
   - GPSCoreFeatureInterface/CoordinatorInterface (1.0.0)
   - GPSCoreFeatureInterface/ModuleInterface (1.0.0)
-  - GPSCoreFeatureInterface/TabbarInterface (1.0.0)
   - GPSExtensions (1.0.0)
   - GPSHome (1.0.0):
     - Cartography
@@ -20,20 +18,6 @@ PODS:
     - GPSUI
     - PromiseKit
   - GPSHome/Tests (1.0.0):
-    - Cartography
-    - GPSCoreFeatureInterface/CoordinatorInterface
-    - GPSCoreFeatureInterface/ModuleInterface
-    - GPSExtensions
-    - GPSUI
-    - PromiseKit
-  - GPSTabBar (1.0.0):
-    - Cartography
-    - GPSCoreFeatureInterface/CoordinatorInterface
-    - GPSCoreFeatureInterface/ModuleInterface
-    - GPSExtensions
-    - GPSUI
-    - PromiseKit
-  - GPSTabBar/Tests (1.0.0):
     - Cartography
     - GPSCoreFeatureInterface/CoordinatorInterface
     - GPSCoreFeatureInterface/ModuleInterface
@@ -64,8 +48,6 @@ DEPENDENCIES:
   - GPSExtensions (from `Modules/Services/GPSExtensions`)
   - GPSHome (from `Modules/Features/GPSHome`)
   - GPSHome/Tests (from `Modules/Features/GPSHome`)
-  - GPSTabBar (from `Modules/Features/GPSTabBar`)
-  - GPSTabBar/Tests (from `Modules/Features/GPSTabBar`)
   - GPSUI (from `Modules/Core/UI/GPSUI`)
   - Kingfisher (= 5.7.0)
   - lottie-ios (= 3.1.5)
@@ -90,18 +72,15 @@ EXTERNAL SOURCES:
     :path: Modules/Services/GPSExtensions
   GPSHome:
     :path: Modules/Features/GPSHome
-  GPSTabBar:
-    :path: Modules/Features/GPSTabBar
   GPSUI:
     :path: Modules/Core/UI/GPSUI
 
 SPEC CHECKSUMS:
   Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
   GPSCoreFeature: e1d0fff8601355ac73d498953d88ac0f2eb7b5da
-  GPSCoreFeatureInterface: 141e4cf28eb2de3e162d19eb3132fa82bb36a765
+  GPSCoreFeatureInterface: 7aaf98a93399905e89b5cdb84b503d599eedd79b
   GPSExtensions: 4670135b872bb4f9dcaa3991e38acddf8e103eec
   GPSHome: 75967bb13f065c623ec30c8ca319a9d6273971c3
-  GPSTabBar: 39ea2e8c4f6e80062088d31b4d4a7f576efc10cb
   GPSUI: a723693a1f038391a5290a03916c644c460c440a
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
@@ -109,6 +88,6 @@ SPEC CHECKSUMS:
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: e986d8ec77867390260ae06a325a2c61bb677a97
+PODFILE CHECKSUM: 339784d5b9296090db00209420e2c9e57de72bf8
 
 COCOAPODS: 1.10.0

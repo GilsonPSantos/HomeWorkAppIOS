@@ -1,3 +1,5 @@
-public struct Dependencies {
+import GPSCoreFeatureInterface
+
+public struct Dependencies: DependenciesProtocol {
     public init(){}
 }

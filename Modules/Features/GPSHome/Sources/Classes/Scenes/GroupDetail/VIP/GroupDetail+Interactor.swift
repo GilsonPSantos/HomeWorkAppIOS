@@ -7,14 +7,17 @@ protocol GroupDetailInteractorProtocol {
 
 extension GroupDetail {
     final class Interactor: GroupDetailInteractorProtocol {
+        private let coordinator: GroupDetailCoordinatorProtocol
         private var dataStore: GroupDetailDataStoreProtocol
         private let presenter: GroupDetailPresenterProtocol
         private let dataProvider: GroupDetailDataProviderProtocol
 
-        init(dataStore: GroupDetailDataStoreProtocol,
+        init(coordinator: GroupDetailCoordinatorProtocol,
+             dataStore: GroupDetailDataStoreProtocol,
              presenter: GroupDetailPresenterProtocol,
              dataProvider: GroupDetailDataProviderProtocol)
         {
+            self.coordinator = coordinator
             self.dataStore = dataStore
             self.presenter = presenter
             self.dataProvider = dataProvider

@@ -16,7 +16,7 @@ extension GroupDetail {
             self.dependencies = dependencies
         }
 
-        func scene() -> UIViewController?
+        func scene() -> UIViewController
         {
             initialize()
         }
@@ -27,18 +27,18 @@ extension GroupDetail {
             let presenter = Presenter()
             let dataStore = DataStore()
             let dataProvider = DataProvider()
-            let interactor = Interactor(dataStore: dataStore,
+            let interactor = Interactor(coordinator: coordinator,
+                                        dataStore: dataStore,
                                         presenter: presenter,
                                         dataProvider: dataProvider)
             let view = GroupDetailView.make()
             let viewController = ViewController(interactor: interactor,
-                                                customView: view,
-                                                coordinator: coordinator)
+                                                customView: view)
             view.setup(delegate: viewController)
             presenter.viewController = viewController
             self.rootViewController = viewController
 
-            return NavigationController(rootViewController: viewController)
+            return viewController
         }
     }
 }

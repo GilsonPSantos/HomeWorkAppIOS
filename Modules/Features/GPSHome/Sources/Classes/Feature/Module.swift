@@ -12,10 +12,8 @@ public struct Module: ModuleProtocol {
     public func createInitialScene(rootViewController: UIViewController?)
     {
         let coordinator = createCoordinator(rootViewController: nil)
+        let initialController = coordinator.scene()
 
-        guard let initialController = coordinator.scene() else {
-            return
-        }
         if let navigation = rootViewController?.navigationController {
             navigation.pushViewController(initialController, animated: true)
         } else if let navigation = rootViewController as? UINavigationController {

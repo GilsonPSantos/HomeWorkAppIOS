@@ -4,16 +4,13 @@ extension Home {
     final class ViewController: GPSUI.ViewController {
         private let interactor: HomeInteractorProtocol
         private let customView: HomeViewProtocol
-        private let coordinator: HomeCoordinatorProtocol
         private var viewModel: [Home.ViewModel] = []
 
         init(interactor: HomeInteractorProtocol,
-             customView: HomeViewProtocol,
-             coordinator: HomeCoordinatorProtocol)
+             customView: HomeViewProtocol)
         {
             self.interactor = interactor
             self.customView = customView
-            self.coordinator = coordinator
             super.init(nibName: nil, bundle: nil)
         }
 
@@ -64,7 +61,7 @@ extension Home.ViewController: HomeViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        print(indexPath)
+        interactor.didSelectCell(at: indexPath.row)
     }
 }
 

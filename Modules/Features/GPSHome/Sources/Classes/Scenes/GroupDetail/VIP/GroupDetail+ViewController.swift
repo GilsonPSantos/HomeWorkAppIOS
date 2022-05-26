@@ -4,16 +4,13 @@ extension GroupDetail {
     final class ViewController: GPSUI.ViewController {
         private let interactor: GroupDetailInteractorProtocol
         private let customView: GroupDetailViewProtocol
-        private let coordinator: GroupDetailCoordinatorProtocol
         private var viewModel: [GroupDetail.ViewModel] = []
 
         init(interactor: GroupDetailInteractorProtocol,
-             customView: GroupDetailViewProtocol,
-             coordinator: GroupDetailCoordinatorProtocol)
+             customView: GroupDetailViewProtocol)
         {
             self.interactor = interactor
             self.customView = customView
-            self.coordinator = coordinator
             super.init(nibName: nil, bundle: nil)
         }
 

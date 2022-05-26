@@ -2,10 +2,12 @@ import UIKit
 import GPSHome
 import GPSUI
 
-class ViewController: UIViewController {
+class ViewController: GPSUI.ViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        hidesNavigationBarWhenPushed = true
     }
 
     @IBAction func startButtonTouched(_ sender: UIButton)

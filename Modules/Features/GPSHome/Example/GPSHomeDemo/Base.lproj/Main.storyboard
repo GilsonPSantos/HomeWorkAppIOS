@@ -54,7 +54,7 @@
         <!--Navigation Controller-->
         <scene sceneID="YR3-WG-c4k">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="axo-ph-v5f" customClass="NavigationController" customModule="MPayUI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="axo-ph-v5f" customClass="NavigationController" customModule="GPSUI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qpj-si-GXb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

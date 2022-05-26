@@ -14,12 +14,14 @@ public class NavigationController: UINavigationController {
         printDeinitInfo(of: self)
     }
 
-    override open func viewDidLoad() {
+    override open func viewDidLoad()
+    {
         super.viewDidLoad()
         setupAppearance()
     }
 
-    private func setupAppearance() {
+    func setupAppearance()
+    {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
         appearance.shadowImage = UIImage()
@@ -30,7 +32,8 @@ public class NavigationController: UINavigationController {
         navigationBar.scrollEdgeAppearance = appearance
     }
 
-     func setTitle(title: String) {
+     func setTitle(title: String)
+    {
         self.navigationBar.topItem?.title = title
     }
 }

@@ -9,7 +9,19 @@ public struct Module: ModuleProtocol {
         self.dependencies = dependencies
     }
 
-    public func createInitialScene(rootViewController: UIViewController?) {}
+    public func createInitialScene(rootViewController: UIViewController?)
+    {
+        let coordinator = createCoordinator(rootViewController: nil)
+
+        guard let initialController = coordinator.scene() else {
+            return
+        }
+        if let navigation = rootViewController?.navigationController {
+            navigation.pushViewController(initialController, animated: true)
+        } else if let navigation = rootViewController as? UINavigationController {
+            navigation.pushViewController(initialController, animated: true)
+        }
+    }
 
     public func createCoordinator(rootViewController: UIViewController?) -> CoordinatorProtocol
     {

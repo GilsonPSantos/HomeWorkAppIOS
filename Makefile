@@ -19,3 +19,6 @@ feature: ## Run createFeature script
 
 core: ## Run createFeature script
 	bash $(SCRIPTS_DIR)/createCore.sh
+
+duplicate_and_replace: ## Duplicate and replace all files and their content replacing a word for another
+	python3 $(SCRIPTS_DIR)/duplicateAndReplace.py

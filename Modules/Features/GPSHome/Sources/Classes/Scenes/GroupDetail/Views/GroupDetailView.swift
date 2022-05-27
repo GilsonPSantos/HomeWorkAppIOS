@@ -6,7 +6,7 @@ protocol GroupDetailViewProtocol where Self: UIView {
     func reloadData()
 }
 
-typealias GroupDetailViewDelegate = UITableViewDataSource & UITableViewDelegate
+typealias GroupDetailViewDelegate = UITableViewDataSource & UITableViewDelegate & UICollectionViewDataSource
 
 final class GroupDetailView: UIView, GroupDetailViewProtocol {
     static func make() -> GroupDetailViewProtocol
@@ -18,11 +18,12 @@ final class GroupDetailView: UIView, GroupDetailViewProtocol {
     {
         let tableView = UITableView(frame: .zero)
         tableView.tableFooterView = UIView()
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .singleLine
         tableView.showsVerticalScrollIndicator = false
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 150
+        tableView.estimatedRowHeight = 48
         tableView.backgroundColor = DesignSystemApp.shared.designSystem.backgroundColor
+//        tableView.register(OptionslCell.self)
         tableView.register(GroupDetailCell.self)
         return tableView
     }

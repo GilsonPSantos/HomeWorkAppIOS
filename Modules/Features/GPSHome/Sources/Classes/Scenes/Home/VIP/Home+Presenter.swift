@@ -39,11 +39,11 @@ extension Home {
         private func color(with value: CGFloat) -> UIColor
         {
             if value >= 80.0 {
-                return Style.Color.success.rawValue.hexStringToUIColor()
+                return Style.Color.success.color
             } else if value <= 50.0 {
-                return Style.Color.error.rawValue.hexStringToUIColor()
+                return Style.Color.error.color
             } else {
-                return Style.Color.warning.rawValue.hexStringToUIColor()
+                return Style.Color.warning.color
             }
         }
     }
